@@ -65,12 +65,16 @@ public class Szerzodes{
 
     @Override
     public String toString() {
-        return "Szerzodes: " +
-                "\n-bérlő adatai: " + berloAdatai.toString() +
-                "\n-bérbeadó adatai: " + berbeAdoAdatai.toString() +
-                "\n-cím: " + cim +
+        return "Szerződés: " +
+                "\n\n" + berloAdatai.toString() +
+                "\n\n" + berbeAdoAdatai.toString() +
+                "\n\nSzerződés adatai:\n-cím: " + cim +
                 "\n-bérleti díj: " + berletiDij +
                 "\n-bérleti idő: " + berletiIdo +
                 "\n-kaukció összege: " + kaukcioOsszeg;
+    }
+
+    public String fajlbaIras(){
+        return berloAdatai.fajlbaIras()+","+berbeAdoAdatai.fajlbaIras()+","+cim+","+berletiDij+","+berletiIdo+","+kaukcioOsszeg+";\n";
     }
 }
