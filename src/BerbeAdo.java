@@ -51,10 +51,10 @@ public class BerbeAdo {
                 "\n-születési év: " + szulEv +
                 "\n-kiadott apartmanok száma: " + kiadottApartmann;
     }
-    public String fajlbaIras(){
-        return azonosito+"/"+nev+"/"+szulEv+"/"+kiadottApartmann;
-    }
 
+    public String fajlbaIras() {
+        return azonosito + "/" + nev + "/" + szulEv + "/" + kiadottApartmann;
+    }
 
 
 }

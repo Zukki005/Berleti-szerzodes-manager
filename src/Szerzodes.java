@@ -1,4 +1,4 @@
-public class Szerzodes{
+public class Szerzodes {
     private Berlo berloAdatai;
     private BerbeAdo berbeAdoAdatai;
     private String cim;
@@ -71,10 +71,10 @@ public class Szerzodes{
                 "\n\nSzerződés adatai:\n-cím: " + cim +
                 "\n-bérleti díj: " + berletiDij +
                 "\n-bérleti idő: " + berletiIdo +
-                "\n-kaukció összege: " + kaukcioOsszeg;
+                "\n-kaukció összege: " + kaukcioOsszeg + "\n";
     }
 
-    public String fajlbaIras(){
-        return berloAdatai.fajlbaIras()+","+berbeAdoAdatai.fajlbaIras()+","+cim+","+berletiDij+","+berletiIdo+","+kaukcioOsszeg+";\n";
+    public String fajlbaIras() {
+        return berloAdatai.fajlbaIras() + "," + berbeAdoAdatai.fajlbaIras() + "," + cim + "," + berletiDij + "," + berletiIdo + "," + kaukcioOsszeg + ";\n";
     }
 }

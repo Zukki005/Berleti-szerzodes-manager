@@ -51,8 +51,9 @@ public class Berlo {
                 "\n-születési év: " + szulEv +
                 "\n-bérelt apartmanok száma: " + bereltApartman;
     }
-    public String fajlbaIras(){
-        return azonosito+"/"+nev+"/"+szulEv+"/"+bereltApartman;
+
+    public String fajlbaIras() {
+        return azonosito + "/" + nev + "/" + szulEv + "/" + bereltApartman;
     }
 
 }
