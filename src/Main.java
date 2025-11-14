@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -9,8 +10,6 @@ public class Main {
 
         Berlo berlo = new Berlo(2, "Lajos", "2001-06-08", 3);
 
-
-        Szerzodes szerzodes = new Szerzodes(berlo, berbeAdo, "Tatabánya Gál István ltp. 707", 90000, 12, 10000);
 
 
         try {
@@ -23,18 +22,7 @@ public class Main {
             System.out.println("Hiba történt!");
         }
 
-        try {
-            FileWriter fw = new FileWriter("szerzodesek.txt", true);
-            fw.write(szerzodes.fajlbaIras());
-            fw.close();
-        } catch (IOException e) {
-            System.out.println("Hiba történt a fájl írása során!");
-            throw new RuntimeException(e);
-        }
-        toltes(szerzodesek);
-        for (int i = 0; i < szerzodesek.size(); i++) {
-            System.out.println(szerzodesek.get(i));
-        }
+
 
     }
 
@@ -65,4 +53,48 @@ public class Main {
         }
     }
 
+    public  static void fajlbaIras(){
+        ArrayList<String> adatok = new ArrayList<>();
+        Scanner be = new Scanner(System.in);
+        System.out.println("Berlő adatai:");
+        System.out.println("Berlő azonosítója: ");
+        adatok.add(be.nextLine());
+        System.out.println("Berlő Neve: ");
+        adatok.add(be.nextLine());
+        System.out.println("Berlő születésiéve: ");
+        adatok.add(be.nextLine());
+        System.out.println("Berlő bérelt apartmanok száma: ");
+        adatok.add(be.nextLine());
+        System.out.println("Berlő adatai:");
+
+        System.out.println("Bérbeadó azonosítója: ");
+        adatok.add(be.nextLine());
+        System.out.println("Bérbeadó Neve: ");
+        adatok.add(be.nextLine());
+        System.out.println("Bérbeadó születésiéve: ");
+        adatok.add(be.nextLine());
+        System.out.println("Bérbeadó kiadott apartmanok száma: ");
+        adatok.add(be.nextLine());
+
+        System.out.println("Szerzodes adatai: ");
+        System.out.println("Apartman címe: ");
+        adatok.add(be.nextLine());
+        System.out.println("Bérletidíj: ");
+        adatok.add(be.nextLine());
+        System.out.println("Bérleti idő: ");
+        adatok.add(be.nextLine());
+        System.out.println("Kaukció összege: ");
+        adatok.add(be.nextLine());
+        Berlo berlo = new Berlo(Integer.parseInt(adatok.get(0)),adatok.get(1),adatok.get(2),Integer.parseInt(adatok.get(3)));
+        BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(adatok.get(4)),adatok.get(5),adatok.get(6),Integer.parseInt(adatok.get(7)));
+        Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,adatok.get(8),Integer.parseInt(adatok.get(9)),Integer.parseInt(adatok.get(10)),Integer.parseInt(adatok.get(11)));
+        try {
+            FileWriter fw = new FileWriter("szerzodesek.txt", true);
+            fw.write(szerzodes.fajlbaIras());
+            fw.close();
+        } catch (IOException e) {
+            System.out.println("Hiba történt a fájl írása során!");
+            throw new RuntimeException(e);
+        }
+    }
 }
