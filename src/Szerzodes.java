@@ -2,16 +2,17 @@ public class Szerzodes {
     private Berlo berloAdatai;
     private BerbeAdo berbeAdoAdatai;
     private String cim;
-    private int berletiDij, kaukcioOsszeg, berletiIdo, nm;
+    private int berletiDij;
+    private int berletiIdo;
+    private int kaukcioOsszeg;
 
-    public Szerzodes(Berlo berloAdatai, BerbeAdo berbeAdoAdatai, String cim, int berletiDij, int berletiIdo, int kaukcioOsszeg, int nm) {
-        this.setBerloAdatai(berloAdatai);
-        this.setBerbeAdoAdatai(berbeAdoAdatai);
-        this.setCim(cim);
-        this.setBerletiDij(berletiDij);
-        this.setBerletiIdo(berletiIdo);
-        this.setKaukcioOsszeg(kaukcioOsszeg);
-        this.setNm(nm);
+    public Szerzodes(Berlo berloAdatai, BerbeAdo berbeAdoAdatai, String cim, int berletiDij, int berletiIdo, int kaukcioOsszeg) {
+        this.berloAdatai = berloAdatai;
+        this.berbeAdoAdatai = berbeAdoAdatai;
+        this.cim = cim;
+        this.berletiDij = berletiDij;
+        this.berletiIdo = berletiIdo;
+        this.kaukcioOsszeg = kaukcioOsszeg;
     }
 
     public int getKaukcioOsszeg() {
@@ -54,23 +55,18 @@ public class Szerzodes {
         this.berloAdatai = berloAdatai;
     }
 
-    public int getNm() {return nm;}
-
-    public void setNm(int nm) {this.nm = nm;}
-
     @Override
     public String toString() {
         return "Szerződés: " +
                 "\n\n" + berloAdatai.toString() +
                 "\n\n" + berbeAdoAdatai.toString() +
-                "\n\nSzerződés adatai:\n-cím: " + this.getCim() +
-                "\n-bérleti díj: " + this.getBerletiDij() +
-                "\n-bérleti idő: " + this.getBerletiIdo() +
-                "\n-négyzetméter: " + this.getNm() +
-                "\n-kaukció összege: " + this.getKaukcioOsszeg() + "\n";
+                "\n\nSzerződés adatai:\n-cím: " + cim +
+                "\n-bérleti díj: " + berletiDij +
+                "\n-bérleti idő: " + berletiIdo +
+                "\n-kaukció összege: " + kaukcioOsszeg + "\n";
     }
 
     public String fajlbaIras() {
-        return berloAdatai.fajlbaIras() + "," + berbeAdoAdatai.fajlbaIras() + "," + cim + "," + berletiDij + "," + berletiIdo + "," + nm + "," + kaukcioOsszeg + "\n";
+        return berloAdatai.fajlbaIras() + "," + berbeAdoAdatai.fajlbaIras() + "," + cim + "," + berletiDij + "," + berletiIdo + "," + kaukcioOsszeg + ";\n";
     }
 }

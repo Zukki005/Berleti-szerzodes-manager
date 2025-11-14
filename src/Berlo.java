@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Berlo {
     private int azonosito, bereltApartman;
     private String nev, szulEv;
@@ -53,5 +55,6 @@ public class Berlo {
     public String fajlbaIras() {
         return azonosito + "/" + nev + "/" + szulEv + "/" + bereltApartman;
     }
+
 
 }
