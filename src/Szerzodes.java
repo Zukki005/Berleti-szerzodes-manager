@@ -46,16 +46,8 @@ public class Szerzodes {
         this.cim = cim;
     }
 
-    public BerbeAdo getBerbeAdoAdatai() {
-        return berbeAdoAdatai;
-    }
-
     public void setBerbeAdoAdatai(BerbeAdo berbeAdoAdatai) {
         this.berbeAdoAdatai = berbeAdoAdatai;
-    }
-
-    public Berlo getBerloAdatai() {
-        return berloAdatai;
     }
 
     public void setBerloAdatai(Berlo berloAdatai) {
