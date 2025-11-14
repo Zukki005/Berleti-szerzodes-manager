@@ -1,16 +1,14 @@
 import java.util.ArrayList;
 
 public class Berlo {
-    private int azonosito;
-    private String nev;
-    private String szulEv;
-    private int bereltApartman;
+    private int azonosito, bereltApartman;
+    private String nev, szulEv;
 
-    public Berlo(int azonosito, String nev, String szulEv, int bereltApartman) {
-        this.azonosito = azonosito;
-        this.nev = nev;
-        this.szulEv = szulEv;
-        this.bereltApartman = bereltApartman;
+    public Berlo(int azonosito, String nev, String szulEv, int bereltApartmann) {
+        this.setAzonosito(azonosito);
+        this.setNev(nev);
+        this.setSzulEv(szulEv);
+        this.setBereltApartman(bereltApartmann);
     }
 
     public int getAzonosito() {
@@ -48,10 +46,10 @@ public class Berlo {
     @Override
     public String toString() {
         return "Bérlő adatai: \n" +
-                "-azonosító: " + azonosito +
-                "\n-név: " + nev +
-                "\n-születési év: " + szulEv +
-                "\n-bérelt apartmanok száma: " + bereltApartman;
+                "-azonosító: " + this.getAzonosito() +
+                "\n-név: " + this.getNev()+
+                "\n-születési év: " + this.getSzulEv() +
+                "\n-bérelt apartmanok száma: " + this.getBereltApartman();
     }
 
     public String fajlbaIras() {
