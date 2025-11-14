@@ -1,14 +1,12 @@
 public class BerbeAdo {
-    private int azonosito;
-    private String nev;
-    private String szulEv;
-    private int kiadottApartmann;
+    private int azonosito, kiadottApartman;
+    private String nev, szulEv;
 
-    public BerbeAdo(int azonosito, String nev, String szulEv, int kiadottApartmann) {
-        this.azonosito = azonosito;
-        this.nev = nev;
-        this.szulEv = szulEv;
-        this.kiadottApartmann = kiadottApartmann;
+    public BerbeAdo(int azonosito, String nev, String szulEv, int kiadottApartman) {
+        this.setAzonosito(azonosito);
+        this.setNev(nev);
+        this.setSzulEv(szulEv);
+        this.setKiadottApartman(kiadottApartman);
     }
 
     public int getAzonosito() {
@@ -35,25 +33,25 @@ public class BerbeAdo {
         this.szulEv = szulEv;
     }
 
-    public int getKiadottApartmann() {
-        return kiadottApartmann;
+    public int getKiadottApartman() {
+        return kiadottApartman;
     }
 
-    public void setKiadottApartmann(int kiadottApartmann) {
-        this.kiadottApartmann = kiadottApartmann;
+    public void setKiadottApartman(int kiadottApartman) {
+        this.kiadottApartman = kiadottApartman;
     }
 
     @Override
     public String toString() {
         return "Bérbeadó adatai: \n" +
-                "-azonosító: " + azonosito +
-                "\n-név: " + nev +
-                "\n-születési év: " + szulEv +
-                "\n-kiadott apartmanok száma: " + kiadottApartmann;
+                "-azonosító: " + this.getAzonosito() +
+                "\n-név: " + this.getNev() +
+                "\n-születési év: " + this.getSzulEv() +
+                "\n-kiadott apartmanok száma: " + this.getKiadottApartman();
     }
 
     public String fajlbaIras() {
-        return azonosito + "/" + nev + "/" + szulEv + "/" + kiadottApartmann;
+        return azonosito + "/" + nev + "/" + szulEv + "/" + kiadottApartman;
     }
 
 
