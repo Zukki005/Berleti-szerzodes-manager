@@ -75,6 +75,6 @@ public class Szerzodes {
     }
 
     public String fajlbaIras() {
-        return berloAdatai.fajlbaIras() + "," + berbeAdoAdatai.fajlbaIras() + "," + cim + "," + berletiDij + "," + berletiIdo + "," + kaukcioOsszeg + ";\n";
+        return berloAdatai.fajlbaIras() + "," + berbeAdoAdatai.fajlbaIras() + "," + cim + "," + berletiDij + "," + berletiIdo + "," + kaukcioOsszeg + "\n";
     }
 }
