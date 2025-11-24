@@ -18,7 +18,7 @@ public class Main {
         }
 
         toltes(szerzodesek);
-        fajlbaIras();
+        fajlbaIras(szerzodesek);
 
         for (int i = 0; i < szerzodesek.size(); i++) {
             System.out.println(szerzodesek);
@@ -26,7 +26,6 @@ public class Main {
 
 
         //switch ()
-
 
 
     }
@@ -48,17 +47,16 @@ public class Main {
                 Berlo berlo = new Berlo(Integer.parseInt(st2.nextToken()),st2.nextToken(),st2.nextToken(),Integer.parseInt(st2.nextToken()));
                 StringTokenizer st3 = new StringTokenizer(berbeadoadat, "/");
                 BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(st3.nextToken()),st3.nextToken(),st3.nextToken(),Integer.parseInt(st3.nextToken()));
-                Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,st1.nextToken(),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()));
+                Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,st1.nextToken(),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()));
                 szerzodesek.add(szerzodes);
             }
-
         } catch (IOException e) {
             System.out.println("Hiba történt a fájl olvasása során!");
             throw new RuntimeException(e);
         }
     }
 
-    public  static void fajlbaIras(){
+    public  static void fajlbaIras(ArrayList<Szerzodes> szerzodesek){
         ArrayList<String> adatok = new ArrayList<>();
         Scanner be = new Scanner(System.in);
         System.out.println("Bérlő adatai:");
@@ -92,9 +90,11 @@ public class Main {
         adatok.add(be.nextLine());
         System.out.println("Lakás négyzetmétere: ");
         adatok.add(be.nextLine());
+        System.out.println("Szerződés azonosítója:");
+        adatok.add(be.nextLine());
         Berlo berlo = new Berlo(Integer.parseInt(adatok.get(0)),adatok.get(1),adatok.get(2),Integer.parseInt(adatok.get(3)));
         BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(adatok.get(4)),adatok.get(5),adatok.get(6),Integer.parseInt(adatok.get(7)));
-        Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,adatok.get(8),Integer.parseInt(adatok.get(9)),Integer.parseInt(adatok.get(10)),Integer.parseInt(adatok.get(11)),Integer.parseInt(adatok.get(12)));
+        Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,adatok.get(8),Integer.parseInt(adatok.get(9)),Integer.parseInt(adatok.get(10)),Integer.parseInt(adatok.get(11)),Integer.parseInt(adatok.get(12)), Integer.parseInt(adatok.get(13)));
         try {
             FileWriter fw = new FileWriter("szerzodesek.txt", true);
             fw.write(szerzodes.fajlbaIras());
@@ -103,5 +103,39 @@ public class Main {
             System.out.println("Hiba történt a fájl írása során!");
             throw new RuntimeException(e);
         }
+        toltes(szerzodesek);
+    }
+    public static void torles(ArrayList<Szerzodes> szerzodesek, int szerzodesAzonosito){
+        toltes(szerzodesek);
+        for (int i = 0; i < szerzodesek.size(); i++) {
+            if (szerzodesek.get(i).getAzon() == szerzodesAzonosito){
+                szerzodesek.remove(szerzodesek.get(i));
+            }
+        }
+    }
+
+        public static void fajlTorles() throws IOException {
+            FileWriter fw = new FileWriter("szerzodesek.txt", false);
+            fw.write("");
+            fw.close();
+        }
+
+    public static void fajlFrissites(ArrayList<Szerzodes> szerzodesek){
+        try {
+            fajlTorles();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        for (int i = 0; i < szerzodesek.size(); i++) {
+            try {
+                FileWriter fw = new FileWriter("szerzodesek.txt", true);
+                fw.write(szerzodesek.get(i).toString());
+                fw.close();
+            } catch (IOException e) {
+                System.out.println("Hiba történt a fájl írása során!");
+                throw new RuntimeException(e);
+            }
+        }
+
     }
 }

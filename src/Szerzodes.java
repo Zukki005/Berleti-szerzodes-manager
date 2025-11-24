@@ -2,9 +2,9 @@ public class Szerzodes {
     private Berlo berloAdatai;
     private BerbeAdo berbeAdoAdatai;
     private String cim;
-    private int berletiDij, kaukcioOsszeg, berletiIdo, nm;
+    private int azon, berletiDij, kaukcioOsszeg, berletiIdo, nm;
 
-    public Szerzodes(Berlo berloAdatai, BerbeAdo berbeAdoAdatai, String cim, int berletiDij, int berletiIdo, int kaukcioOsszeg, int nm) {
+    public Szerzodes(Berlo berloAdatai, BerbeAdo berbeAdoAdatai, String cim, int berletiDij, int berletiIdo, int kaukcioOsszeg, int nm, int azon) {
         this.setBerloAdatai(berloAdatai);
         this.setBerbeAdoAdatai(berbeAdoAdatai);
         this.setCim(cim);
@@ -12,6 +12,15 @@ public class Szerzodes {
         this.setBerletiIdo(berletiIdo);
         this.setKaukcioOsszeg(kaukcioOsszeg);
         this.setNm(nm);
+        this.setAzon(azon);
+    }
+
+    public int getAzon() {
+        return azon;
+    }
+
+    public void setAzon(int azon) {
+        this.azon = azon;
     }
 
     public int getKaukcioOsszeg() {
