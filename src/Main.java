@@ -1,5 +1,3 @@
-import com.sun.security.jgss.GSSUtil;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -9,14 +7,6 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Szerzodes> szerzodesek = new ArrayList<>();
 
-        System.out.println(szerzodesek);
-        toltes(szerzodesek);
-        for (int i = 0; i < szerzodesek.size(); i++) {
-            System.out.println(szerzodesek.get(i).toString());
-        }
-
-    }
-    public static void fajlLetrehozas(){
         try {
             File f = new File("szerzodesek.txt");
             if (f.createNewFile()) {
@@ -26,50 +16,62 @@ public class Main {
         } catch (IOException e) {
             System.out.println("Hiba történt!");
         }
+
+        toltes(szerzodesek);
+        fajlbaIras();
+
+        for (int i = 0; i < szerzodesek.size(); i++) {
+            System.out.println(szerzodesek);
+        }
+
+
+        //switch ()
+
+
+
     }
 
     public static void toltes(ArrayList<Szerzodes> szerzodesek) {
-        ArrayList<String> sorok = new ArrayList<>();
         try {
+            ArrayList<Berlo> berlok = new ArrayList<>();
+            ArrayList<BerbeAdo> berbeAdok = new ArrayList<>();
+            ArrayList<String> sorok = new ArrayList<>();
             BufferedReader br = new BufferedReader(new FileReader("szerzodesek.txt"));
-            while(br.readLine() != null){
-                String sor = br.readLine();
-                sorok.add(sor);
-            }
+            String sor = br.readLine();
             br.close();
+            sorok.add(sor);
+            for (int i = 0; i < sorok.size(); i++) {
+                StringTokenizer st1 = new StringTokenizer(sor, ",");
+                String berloadat = st1.nextToken();
+                String berbeadoadat = st1.nextToken();
+                StringTokenizer st2 = new StringTokenizer(berloadat, "/");
+                Berlo berlo = new Berlo(Integer.parseInt(st2.nextToken()),st2.nextToken(),st2.nextToken(),Integer.parseInt(st2.nextToken()));
+                StringTokenizer st3 = new StringTokenizer(berbeadoadat, "/");
+                BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(st3.nextToken()),st3.nextToken(),st3.nextToken(),Integer.parseInt(st3.nextToken()));
+                Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,st1.nextToken(),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()));
+                szerzodesek.add(szerzodes);
+            }
+
         } catch (IOException e) {
             System.out.println("Hiba történt a fájl olvasása során!");
             throw new RuntimeException(e);
         }
-        for (int i = 0; i < sorok.size(); i++) {
-            ArrayList<Berlo> berlok = new ArrayList<>();
-            ArrayList<BerbeAdo> berbeAdok = new ArrayList<>();
-            StringTokenizer st1 = new StringTokenizer(sorok.get(i), ",");
-            String berloadat = st1.nextToken();
-            String berbeadoadat = st1.nextToken();
-            StringTokenizer st2 = new StringTokenizer(berloadat, "/");
-            Berlo berlo = new Berlo(Integer.parseInt(st2.nextToken()),st2.nextToken(),st2.nextToken(),Integer.parseInt(st2.nextToken()));
-            StringTokenizer st3 = new StringTokenizer(berbeadoadat, "/");
-            BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(st3.nextToken()),st3.nextToken(),st3.nextToken(),Integer.parseInt(st3.nextToken()));
-            Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,st1.nextToken(),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()), Integer.parseInt(st1.nextToken()));
-            szerzodesek.add(szerzodes);
-        }
     }
 
-    public static void fajlbaIras(){
+    public  static void fajlbaIras(){
         ArrayList<String> adatok = new ArrayList<>();
         Scanner be = new Scanner(System.in);
-        System.out.println("Berlő adatai:");
-        System.out.println("Berlő azonosítója: ");
+        System.out.println("Bérlő adatai:");
+        System.out.println("Bérlő azonosítója: ");
         adatok.add(be.nextLine());
         System.out.println("Berlő Neve: ");
         adatok.add(be.nextLine());
-        System.out.println("Berlő születésiéve: ");
+        System.out.println("Bérlő születési éve: ");
         adatok.add(be.nextLine());
-        System.out.println("Berlő bérelt apartmanok száma: ");
+        System.out.println("Bérlő bérelt apartmanok száma: ");
         adatok.add(be.nextLine());
-        System.out.println("Berlő adatai:");
 
+        System.out.println("Bérbeadó adatai:");
         System.out.println("Bérbeadó azonosítója: ");
         adatok.add(be.nextLine());
         System.out.println("Bérbeadó Neve: ");
@@ -84,15 +86,15 @@ public class Main {
         adatok.add(be.nextLine());
         System.out.println("Bérletidíj: ");
         adatok.add(be.nextLine());
-        System.out.println("Bérleti idő (hónap): ");
+        System.out.println("Bérleti idő (hónapban): ");
         adatok.add(be.nextLine());
         System.out.println("Kaukció összege: ");
         adatok.add(be.nextLine());
-        System.out.println("Apartman területe (m2):");
+        System.out.println("Lakás négyzetmétere: ");
         adatok.add(be.nextLine());
         Berlo berlo = new Berlo(Integer.parseInt(adatok.get(0)),adatok.get(1),adatok.get(2),Integer.parseInt(adatok.get(3)));
         BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(adatok.get(4)),adatok.get(5),adatok.get(6),Integer.parseInt(adatok.get(7)));
-        Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,adatok.get(8),Integer.parseInt(adatok.get(9)),Integer.parseInt(adatok.get(10)),Integer.parseInt(adatok.get(11)), Integer.parseInt(adatok.get(12)));
+        Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,adatok.get(8),Integer.parseInt(adatok.get(9)),Integer.parseInt(adatok.get(10)),Integer.parseInt(adatok.get(11)),Integer.parseInt(adatok.get(12)));
         try {
             FileWriter fw = new FileWriter("szerzodesek.txt", true);
             fw.write(szerzodes.fajlbaIras());
