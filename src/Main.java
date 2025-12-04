@@ -18,12 +18,13 @@ public class Main {
         }
 
         toltes(szerzodesek);
-        fajlbaIras(szerzodesek);
 
         for (int i = 0; i < szerzodesek.size(); i++) {
-            System.out.println(szerzodesek);
+            System.out.println(szerzodesek.get(i));
         }
 
+        System.out.println("A legolcsóbb bérleti díj:");
+        System.out.println(legolcsobbBerletiDij(szerzodesek));
 
         //switch ()
 
@@ -32,24 +33,48 @@ public class Main {
 
     public static void toltes(ArrayList<Szerzodes> szerzodesek) {
         try {
-            ArrayList<Berlo> berlok = new ArrayList<>();
-            ArrayList<BerbeAdo> berbeAdok = new ArrayList<>();
-            ArrayList<String> sorok = new ArrayList<>();
             BufferedReader br = new BufferedReader(new FileReader("szerzodesek.txt"));
-            String sor = br.readLine();
-            br.close();
-            sorok.add(sor);
-            for (int i = 0; i < sorok.size(); i++) {
+            String sor;
+
+            while ((sor = br.readLine()) != null) {
+
                 StringTokenizer st1 = new StringTokenizer(sor, ",");
+
                 String berloadat = st1.nextToken();
                 String berbeadoadat = st1.nextToken();
+
                 StringTokenizer st2 = new StringTokenizer(berloadat, "/");
-                Berlo berlo = new Berlo(Integer.parseInt(st2.nextToken()),st2.nextToken(),st2.nextToken(),Integer.parseInt(st2.nextToken()));
+                Berlo berlo = new Berlo(
+                        Integer.parseInt(st2.nextToken()),
+                        st2.nextToken(),
+                        st2.nextToken(),
+                        Integer.parseInt(st2.nextToken())
+                );
+
                 StringTokenizer st3 = new StringTokenizer(berbeadoadat, "/");
-                BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(st3.nextToken()),st3.nextToken(),st3.nextToken(),Integer.parseInt(st3.nextToken()));
-                Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,st1.nextToken(),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()),Integer.parseInt(st1.nextToken()));
+                BerbeAdo berbeAdo = new BerbeAdo(
+                        Integer.parseInt(st3.nextToken()),
+                        st3.nextToken(),
+                        st3.nextToken(),
+                        Integer.parseInt(st3.nextToken())
+                );
+
+                Szerzodes szerzodes = new Szerzodes(
+                        berlo,
+                        berbeAdo,
+                        st1.nextToken(),
+                        Integer.parseInt(st1.nextToken()),
+                        Integer.parseInt(st1.nextToken()),
+                        Integer.parseInt(st1.nextToken()),
+                        Integer.parseInt(st1.nextToken()),
+                        Integer.parseInt(st1.nextToken())
+                );
+
                 szerzodesek.add(szerzodes);
             }
+
+            br.close();
+
         } catch (IOException e) {
             System.out.println("Hiba történt a fájl olvasása során!");
             throw new RuntimeException(e);
@@ -105,6 +130,7 @@ public class Main {
         }
         toltes(szerzodesek);
     }
+
     public static void torles(ArrayList<Szerzodes> szerzodesek, int szerzodesAzonosito){
         toltes(szerzodesek);
         for (int i = 0; i < szerzodesek.size(); i++) {
@@ -114,11 +140,11 @@ public class Main {
         }
     }
 
-        public static void fajlTorles() throws IOException {
-            FileWriter fw = new FileWriter("szerzodesek.txt", false);
-            fw.write("");
-            fw.close();
-        }
+    public static void fajlTorles() throws IOException {
+        FileWriter fw = new FileWriter("szerzodesek.txt", false);
+        fw.write("");
+        fw.close();
+    }
 
     public static void fajlFrissites(ArrayList<Szerzodes> szerzodesek){
         try {
@@ -138,4 +164,20 @@ public class Main {
         }
 
     }
+
+    public static Szerzodes legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek){
+        if (szerzodesek.size() == 0) return null;
+
+        Szerzodes minSzerzodes = szerzodesek.get(0);
+
+        for (int i = 1; i < szerzodesek.size(); i++) {
+            if (szerzodesek.get(i).getBerletiDij() < minSzerzodes.getBerletiDij()) {
+                minSzerzodes = szerzodesek.get(i);
+            }
+        }
+
+        return minSzerzodes;
+    }
+
+
 }
