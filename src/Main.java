@@ -19,12 +19,12 @@ public class Main {
 
         toltes(szerzodesek);
 
-        for (int i = 0; i < szerzodesek.size(); i++) {
-            System.out.println(szerzodesek.get(i));
-        }
-
         System.out.println("A legolcsóbb bérleti díj:");
         System.out.println(legolcsobbBerletiDij(szerzodesek));
+
+
+        System.out.println("Keresés");
+        System.out.println(kerese(41, szerzodesek));
 
         //switch ()
 
@@ -179,5 +179,15 @@ public class Main {
         return minSzerzodes;
     }
 
+
+    public static Szerzodes kerese(int azonosito, ArrayList<Szerzodes> szerzodesek){
+        Szerzodes keresett = null;
+        for (int i = 0; i < szerzodesek.size(); i++) {
+            if (szerzodesek.get(i).getAzon() == azonosito){
+                keresett = szerzodesek.get(i);
+            }
+        }
+        return keresett;
+    }
 
 }
