@@ -1,45 +1,81 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.StringTokenizer;
+import java.util.*;
+
+import java.io.*;
+import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) {
         ArrayList<Szerzodes> szerzodesek = new ArrayList<>();
-
-        try {
-            File f = new File("szerzodesek.txt");
-            if (f.createNewFile()) {
-                System.out.println("Sikeres létrehozás: " + f.getName());
-            } else
-                System.out.println("A fájl már létezik!");
-        } catch (IOException e) {
-            System.out.println("Hiba történt!");
-        }
-
         toltes(szerzodesek);
 
-        System.out.println("A legolcsóbb bérleti díj:");
-        System.out.println(legolcsobbBerletiDij(szerzodesek));
+        Scanner be = new Scanner(System.in);
+        int valasztas;
 
+        do {
+            System.out.println("\n====== Szerződéskezelő Menü ======");
+            System.out.println("1 - Összes szerződés listázása");
+            System.out.println("2 - Új szerződés felvétele");
+            System.out.println("3 - Szerződés törlése");
+            System.out.println("4 - Keresés azonosító alapján");
+            System.out.println("5 - Legolcsóbb bérleti díj");
+            System.out.println("6 - Legnagyobb négyzetméter");
+            System.out.println("7 - Legkisebb négyzetméter");
+            System.out.println("0 - Kilépés");
+            System.out.print("Választás: ");
+            valasztas = be.nextInt();
+            be.nextLine();
 
-        System.out.println("Keresés");
-        System.out.println(kerese(41, szerzodesek));
+            switch (valasztas) {
+                case 1:
+                    for (Szerzodes sz : szerzodesek) System.out.println(sz);
+                    break;
 
-        //switch ()
+                case 2:
+                    fajlbaIras(szerzodesek);
+                    break;
 
+                case 3:
+                    System.out.print("Törlendő azonosító: ");
+                    int id = be.nextInt();
+                    torles(szerzodesek, id);
+                    fajlFrissites(szerzodesek);
+                    System.out.println("A "+id+" azonosítójú adatai törölve!");
+                    break;
 
+                case 4:
+                    System.out.print("Keresett azonosító: ");
+                    int keres = be.nextInt();
+                    System.out.println(keresAzon(keres, szerzodesek));
+                    break;
+
+                case 5:
+                    System.out.println("Legolcsóbb:");
+                    System.out.println(legolcsobbBerletiDij(szerzodesek));
+                    break;
+
+                case 6:
+                    System.out.println("Legnagyobb négyzetméter:");
+                    System.out.println(legnagyobbNm(szerzodesek));
+                    break;
+
+                case 7:
+                    System.out.println("Legkisebb négyzetméter:");
+                    System.out.println(legkisebbNm(szerzodesek));
+                    break;
+            }
+
+        } while (valasztas != 0);
     }
 
     public static void toltes(ArrayList<Szerzodes> szerzodesek) {
-        try {
-            BufferedReader br = new BufferedReader(new FileReader("szerzodesek.txt"));
+        try (BufferedReader br = new BufferedReader(new FileReader("szerzodesek.txt"))) {
             String sor;
 
             while ((sor = br.readLine()) != null) {
 
                 StringTokenizer st1 = new StringTokenizer(sor, ",");
-
                 String berloadat = st1.nextToken();
                 String berbeadoadat = st1.nextToken();
 
@@ -59,7 +95,7 @@ public class Main {
                         Integer.parseInt(st3.nextToken())
                 );
 
-                Szerzodes szerzodes = new Szerzodes(
+                Szerzodes sz = new Szerzodes(
                         berlo,
                         berbeAdo,
                         st1.nextToken(),
@@ -70,124 +106,74 @@ public class Main {
                         Integer.parseInt(st1.nextToken())
                 );
 
-                szerzodesek.add(szerzodes);
+                szerzodesek.add(sz);
             }
 
-            br.close();
-
-        } catch (IOException e) {
-            System.out.println("Hiba történt a fájl olvasása során!");
-            throw new RuntimeException(e);
-        }
+        } catch (Exception ignored) {}
     }
 
-    public  static void fajlbaIras(ArrayList<Szerzodes> szerzodesek){
-        ArrayList<String> adatok = new ArrayList<>();
+    public static void fajlbaIras(ArrayList<Szerzodes> szerzodesek) {
         Scanner be = new Scanner(System.in);
-        System.out.println("Bérlő adatai:");
-        System.out.println("Bérlő azonosítója: ");
-        adatok.add(be.nextLine());
-        System.out.println("Berlő Neve: ");
-        adatok.add(be.nextLine());
-        System.out.println("Bérlő születési éve: ");
-        adatok.add(be.nextLine());
-        System.out.println("Bérlő bérelt apartmanok száma: ");
-        adatok.add(be.nextLine());
+        ArrayList<String> adatok = new ArrayList<>();
 
-        System.out.println("Bérbeadó adatai:");
-        System.out.println("Bérbeadó azonosítója: ");
-        adatok.add(be.nextLine());
-        System.out.println("Bérbeadó Neve: ");
-        adatok.add(be.nextLine());
-        System.out.println("Bérbeadó születésiéve: ");
-        adatok.add(be.nextLine());
-        System.out.println("Bérbeadó kiadott apartmanok száma: ");
-        adatok.add(be.nextLine());
+        System.out.println("Bérlő ID:"); adatok.add(be.nextLine());
+        System.out.println("Bérlő neve:"); adatok.add(be.nextLine());
+        System.out.println("Bérlő szül. éve:"); adatok.add(be.nextLine());
+        System.out.println("Apartmanok száma:"); adatok.add(be.nextLine());
 
-        System.out.println("Szerzodes adatai: ");
-        System.out.println("Apartman címe: ");
-        adatok.add(be.nextLine());
-        System.out.println("Bérletidíj: ");
-        adatok.add(be.nextLine());
-        System.out.println("Bérleti idő (hónapban): ");
-        adatok.add(be.nextLine());
-        System.out.println("Kaukció összege: ");
-        adatok.add(be.nextLine());
-        System.out.println("Lakás négyzetmétere: ");
-        adatok.add(be.nextLine());
-        System.out.println("Szerződés azonosítója:");
-        adatok.add(be.nextLine());
-        Berlo berlo = new Berlo(Integer.parseInt(adatok.get(0)),adatok.get(1),adatok.get(2),Integer.parseInt(adatok.get(3)));
-        BerbeAdo berbeAdo = new BerbeAdo(Integer.parseInt(adatok.get(4)),adatok.get(5),adatok.get(6),Integer.parseInt(adatok.get(7)));
-        Szerzodes szerzodes = new Szerzodes(berlo,berbeAdo,adatok.get(8),Integer.parseInt(adatok.get(9)),Integer.parseInt(adatok.get(10)),Integer.parseInt(adatok.get(11)),Integer.parseInt(adatok.get(12)), Integer.parseInt(adatok.get(13)));
-        try {
-            FileWriter fw = new FileWriter("szerzodesek.txt", true);
-            fw.write(szerzodes.fajlbaIras());
-            fw.close();
-        } catch (IOException e) {
-            System.out.println("Hiba történt a fájl írása során!");
-            throw new RuntimeException(e);
-        }
-        toltes(szerzodesek);
-    }
+        System.out.println("Bérbeadó ID:"); adatok.add(be.nextLine());
+        System.out.println("Bérbeadó neve:"); adatok.add(be.nextLine());
+        System.out.println("Bérbeadó szül. éve:"); adatok.add(be.nextLine());
+        System.out.println("Kiadott lakások száma:"); adatok.add(be.nextLine());
 
-    public static void torles(ArrayList<Szerzodes> szerzodesek, int szerzodesAzonosito){
-        toltes(szerzodesek);
-        for (int i = 0; i < szerzodesek.size(); i++) {
-            if (szerzodesek.get(i).getAzon() == szerzodesAzonosito){
-                szerzodesek.remove(szerzodesek.get(i));
-            }
-        }
-    }
+        System.out.println("Cím:"); adatok.add(be.nextLine());
+        System.out.println("Bérleti díj:"); adatok.add(be.nextLine());
+        System.out.println("Bérleti idő:"); adatok.add(be.nextLine());
+        System.out.println("Kaukció:"); adatok.add(be.nextLine());
+        System.out.println("Négyzetméter:"); adatok.add(be.nextLine());
+        System.out.println("Azonosító:"); adatok.add(be.nextLine());
 
-    public static void fajlTorles() throws IOException {
-        FileWriter fw = new FileWriter("szerzodesek.txt", false);
-        fw.write("");
-        fw.close();
-    }
+        Berlo b = new Berlo(Integer.parseInt(adatok.get(0)), adatok.get(1), adatok.get(2), Integer.parseInt(adatok.get(3)));
+        BerbeAdo ba = new BerbeAdo(Integer.parseInt(adatok.get(4)), adatok.get(5), adatok.get(6), Integer.parseInt(adatok.get(7)));
 
-    public static void fajlFrissites(ArrayList<Szerzodes> szerzodesek){
-        try {
-            fajlTorles();
+        Szerzodes sz = new Szerzodes(b, ba,
+                adatok.get(8), Integer.parseInt(adatok.get(9)),
+                Integer.parseInt(adatok.get(10)), Integer.parseInt(adatok.get(11)),
+                Integer.parseInt(adatok.get(12)), Integer.parseInt(adatok.get(13)));
+
+        szerzodesek.add(sz);
+
+        try (FileWriter fw = new FileWriter("szerzodesek.txt", true)) {
+            fw.write(sz.fajlbaIras());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        for (int i = 0; i < szerzodesek.size(); i++) {
-            try {
-                FileWriter fw = new FileWriter("szerzodesek.txt", true);
-                fw.write(szerzodesek.get(i).toString());
-                fw.close();
-            } catch (IOException e) {
-                System.out.println("Hiba történt a fájl írása során!");
-                throw new RuntimeException(e);
-            }
-        }
-
     }
 
-    public static Szerzodes legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek){
-        if (szerzodesek.size() == 0) return null;
-
-        Szerzodes minSzerzodes = szerzodesek.get(0);
-
-        for (int i = 1; i < szerzodesek.size(); i++) {
-            if (szerzodesek.get(i).getBerletiDij() < minSzerzodes.getBerletiDij()) {
-                minSzerzodes = szerzodesek.get(i);
-            }
-        }
-
-        return minSzerzodes;
+    public static void torles(ArrayList<Szerzodes> szerzodesek, int id) {
+        szerzodesek.removeIf(sz -> sz.getAzon() == id);
     }
 
-
-    public static Szerzodes kerese(int azonosito, ArrayList<Szerzodes> szerzodesek){
-        Szerzodes keresett = null;
-        for (int i = 0; i < szerzodesek.size(); i++) {
-            if (szerzodesek.get(i).getAzon() == azonosito){
-                keresett = szerzodesek.get(i);
-            }
-        }
-        return keresett;
+    public static void fajlFrissites(ArrayList<Szerzodes> szerzodesek) {
+        try (FileWriter fw = new FileWriter("szerzodesek.txt", false)) {
+            for (Szerzodes sz : szerzodesek) fw.write(sz.fajlbaIras());
+        } catch (IOException e) { throw new RuntimeException(e); }
     }
 
+    public static Szerzodes keresAzon(int id, ArrayList<Szerzodes> szerzodesek) {
+        for (Szerzodes sz : szerzodesek)
+            if (sz.getAzon() == id) return sz;
+        return null;
+    }
+    public static Szerzodes legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek) {
+        return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getBerletiDij));
+    }
+
+    public static Szerzodes legnagyobbNm(ArrayList<Szerzodes> szerzodesek) {
+        return Collections.max(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
+    }
+
+    public static Szerzodes legkisebbNm(ArrayList<Szerzodes> szerzodesek) {
+        return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
+    }
 }
