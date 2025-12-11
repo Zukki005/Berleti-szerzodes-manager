@@ -1,9 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-import java.io.*;
-import java.util.*;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -18,7 +15,7 @@ public class Main {
             System.out.println("1 - Összes szerződés listázása");
             System.out.println("2 - Új szerződés felvétele");
             System.out.println("3 - Szerződés törlése");
-            System.out.println("4 - Keresés azonosító alapján");
+            System.out.println("4 - Keresés a szerződési azonosító alapján");
             System.out.println("5 - Legolcsóbb bérleti díj");
             System.out.println("6 - Legnagyobb négyzetméter");
             System.out.println("7 - Legkisebb négyzetméter");
@@ -126,7 +123,28 @@ public class Main {
         System.out.println("Bérbeadó szül. éve:"); adatok.add(be.nextLine());
         System.out.println("Kiadott lakások száma:"); adatok.add(be.nextLine());
 
-        System.out.println("Cím:"); adatok.add(be.nextLine());
+
+        String ujCim;
+        while (true) {
+            System.out.println("Cím:");
+            ujCim = be.nextLine();
+            boolean foglalt = false;
+            for (Szerzodes sz : szerzodesek) {
+                if (sz.getCim().equalsIgnoreCase(ujCim)) {
+                    foglalt = true;
+                    break;
+                }
+            }
+            if (foglalt) {
+                System.out.println("Ezen a címen már lefoglalták az apartmant! Adj meg egy új címet!");
+            } else {
+                break;
+            }
+        }
+
+        adatok.add(ujCim);
+
+
         System.out.println("Bérleti díj:"); adatok.add(be.nextLine());
         System.out.println("Bérleti idő:"); adatok.add(be.nextLine());
         System.out.println("Kaukció:"); adatok.add(be.nextLine());
