@@ -1,7 +1,9 @@
 import java.io.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.*;
 
-public class Main {
+public class Main implements iEv, iHonap, iNap{
 
     public static void main(String[] args) {
         ArrayList<Szerzodes> szerzodesek = new ArrayList<>();
@@ -38,7 +40,7 @@ public class Main {
                     int id = be.nextInt();
                     torles(szerzodesek, id);
                     fajlFrissites(szerzodesek);
-                    System.out.println("A "+id+" azonosítójú adatai törölve!");
+                    System.out.println("A "+id+". azonosítójú szerződés adatai törölve!");
                     break;
 
                 case 4:
@@ -113,43 +115,30 @@ public class Main {
         Scanner be = new Scanner(System.in);
         ArrayList<String> adatok = new ArrayList<>();
 
-        System.out.println("Bérlő ID:"); adatok.add(be.nextLine());
-        System.out.println("Bérlő neve:"); adatok.add(be.nextLine());
-        System.out.println("Bérlő szül. éve:"); adatok.add(be.nextLine());
-        System.out.println("Apartmanok száma:"); adatok.add(be.nextLine());
-
-        System.out.println("Bérbeadó ID:"); adatok.add(be.nextLine());
-        System.out.println("Bérbeadó neve:"); adatok.add(be.nextLine());
-        System.out.println("Bérbeadó szül. éve:"); adatok.add(be.nextLine());
-        System.out.println("Kiadott lakások száma:"); adatok.add(be.nextLine());
 
 
-        String ujCim;
-        while (true) {
-            System.out.println("Cím:");
-            ujCim = be.nextLine();
-            boolean foglalt = false;
-            for (Szerzodes sz : szerzodesek) {
-                if (sz.getCim().equalsIgnoreCase(ujCim)) {
-                    foglalt = true;
-                    break;
-                }
-            }
-            if (foglalt) {
-                System.out.println("Ezen a címen már lefoglalták az apartmant! Adj meg egy új címet!");
-            } else {
-                break;
-            }
-        }
-
-        adatok.add(ujCim);
 
 
-        System.out.println("Bérleti díj:"); adatok.add(be.nextLine());
-        System.out.println("Bérleti idő:"); adatok.add(be.nextLine());
-        System.out.println("Kaukció:"); adatok.add(be.nextLine());
-        System.out.println("Négyzetméter:"); adatok.add(be.nextLine());
-        System.out.println("Azonosító:"); adatok.add(be.nextLine());
+        adatok.add(bekerSzam(be, "Bérlő ID: "));
+        adatok.add(bekerNev(be, "Bérlő neve: "));
+        adatok.add(String.valueOf(bekerDatum(be, "Bérlő szül. éve: ")));
+        adatok.add(bekerSzam(be, "Apartmanok száma: "));
+
+        adatok.add(bekerSzam(be, "Bérbeadó ID: "));
+        adatok.add(bekerNev(be,"Bérbeadó neve: "));
+        adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó szül. éve: ")));
+        adatok.add(bekerSzam(be, "Kiadott lakások száma: "));
+
+
+
+
+        adatok.add(bekerUjCim(be, szerzodesek, "Apartmann címe: "));
+
+        adatok.add(bekerSzam(be, "Bérleti díj: "));
+        adatok.add(bekerSzam(be, "Bérleti idő: "));
+        adatok.add(bekerSzam(be, "Kaukció: "));
+        adatok.add(bekerSzam(be, "Négyzetméter: "));
+        adatok.add(bekerSzam(be, "Azonosító: "));
 
         Berlo b = new Berlo(Integer.parseInt(adatok.get(0)), adatok.get(1), adatok.get(2), Integer.parseInt(adatok.get(3)));
         BerbeAdo ba = new BerbeAdo(Integer.parseInt(adatok.get(4)), adatok.get(5), adatok.get(6), Integer.parseInt(adatok.get(7)));
@@ -193,5 +182,117 @@ public class Main {
 
     public static Szerzodes legkisebbNm(ArrayList<Szerzodes> szerzodesek) {
         return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
+    }
+
+    public static String bekerNemUres(Scanner be, String uzenet) {
+        String input = "";
+        while (input.isEmpty()) {
+            System.out.print(uzenet);
+            input = be.nextLine().trim();
+
+            if (input.isEmpty()) {
+                System.out.println("Nem lehet ezt a mezőt üresen hagyni!");
+            }
+        }
+
+        return input;
+    }
+
+    public static String bekerSzam(Scanner be, String uzenet) {
+        while (true) {
+            String input = bekerNemUres(be, uzenet);
+            if (input.matches("\\d+")) {
+                return input;
+            } else {
+                System.out.println("Hibás adat! Csak számot adjon meg.");
+            }
+        }
+    }
+
+    public static String bekerNev(Scanner be, String uzenet) {
+        while (true) {
+            String input = bekerNemUres(be, uzenet);
+            String[] szavak = input.split(" ");
+
+            if (szavak.length < 2) {
+                System.out.println("Hibás név! Legalább két szóból kell állnia.");
+                continue;
+            }
+
+            boolean helyes = true;
+            for (String szo : szavak) {
+                if (szo.isEmpty() || !Character.isUpperCase(szo.charAt(0))) {
+                    helyes = false;
+                    break;
+                }
+            }
+
+            if (!helyes) {
+                System.out.println("Hibás név! Minden szónak nagybetűvel kell kezdődnie.");
+                continue;
+            }
+
+            return input;
+        }
+    }
+
+    public static LocalDate bekerDatum(Scanner be, String uzenet) {
+        while (true) {
+            System.out.print(uzenet);
+            String input = be.nextLine();
+
+            if (input.length() != 10 || input.charAt(4) != '-' || input.charAt(7) != '-') {
+                System.out.println("Hibás formátum! Helyes formátum: yyyy-MM-dd");
+                continue;
+            }
+
+            try {
+                int ev = Integer.parseInt(input.substring(0, 4));
+                int honap = Integer.parseInt(input.substring(5, 7));
+                int nap = Integer.parseInt(input.substring(8, 10));
+
+                if (ev < iEv.MIN || ev > iEv.MAX) {
+                    System.out.println("Hibás év! Érvényes év: " + iEv.MIN + "-" + iEv.MAX);
+                    continue;
+                }
+
+                if (honap < iHonap.MIN || honap > iHonap.MAX) {
+                    System.out.println("Hibás hónap! Érvényes hónap: 1-12");
+                    continue;
+                }
+
+                if (nap < iNap.MIN || nap > iNap.MAX) {
+                    System.out.println("Hibás nap! Érvényes nap: 1-31");
+                    continue;
+                }
+
+                LocalDate datum = LocalDate.parse(input);
+                return datum;
+
+            } catch (NumberFormatException e) {
+                System.out.println("Hiba! Csak számokat adjon meg.");
+            } catch (DateTimeParseException e) {
+                System.out.println("Érvénytelen dátum!");
+            }
+        }
+
+    }
+
+    public static String bekerUjCim(Scanner be,ArrayList<Szerzodes> szerzodesek, String uzenet) {
+        while (true) {
+            String ujCim = bekerNemUres(be, uzenet);
+            boolean foglalt = false;
+            for (Szerzodes sz : szerzodesek) {
+                if (sz.getCim().equalsIgnoreCase(ujCim)) {
+                    foglalt = true;
+                    break;
+                }
+            }
+            if (foglalt) {
+                System.out.println("Ezen a címen már lefoglalták az apartmant! Adj meg egy új címet!");
+            } else {
+                return ujCim;
+            }
+        }
     }
 }
