@@ -1,300 +1,300 @@
-1/Kovács Lajos/1991-03-12/2,1/Nagy Tamás/1975-06-22/4,Budapest Fő utca 12,85000,12,90000,42,1
-2/Szabó Máté/1994-11-03/1,2/Tóth András/1980-01-14/3,Győr Szent Imre út 4,120000,6,150000,55,2
-3/Tamás Áron/1988-07-19/3,3/Farkas Bálint/1972-12-03/7,Pécs Kossuth tér 9,78000,10,80000,38,3
-4/Kiss Gergely/1990-02-28/1,4/Horváth László/1979-04-18/6,Szeged Rákóczi út 15,95000,8,100000,47,4
-5/Varga Dénes/1996-09-10/2,5/Székely Zoltán/1982-07-30/5,Debrecen Arany János u. 2,110000,12,120000,52,5
-6/Németh Levente/1998-05-21/1,6/Lakatos Péter/1971-08-09/3,Nyíregyháza Bethlen Gábor u. 33,70000,5,60000,35,6
-7/Balogh Krisztián/1993-12-11/4,7/Molnár Sándor/1987-03-16/8,Szolnok Tisza-part 7,99000,9,95000,44,7
-8/Szűcs Bence/1989-04-01/2,8/Fülöp József/1977-10-27/4,Sopron Várkerület 101,130000,11,140000,60,8
-9/Bíró Andor/1997-01-15/1,9/Kelemen Gábor/1969-02-07/2,Kaposvár Fő tér 22,87000,7,88000,41,9
-10/Fazekas Botond/1992-08-25/3,10/Takács Roland/1985-05-19/9,Tatabánya Gál István ltp. 707,90000,12,10000,60,10
-11/Csorba Milán/1995-09-13/2,11/Marton Tibor/1976-11-28/6,Budapest Bartók Béla út 88,140000,12,150000,65,11
-12/Kurucz Patrik/1987-05-08/1,12/Vas Dániel/1983-03-22/3,Debrecen Piac utca 44,75000,4,70000,33,12
-13/Kalmár Dóra/1999-07-24/2,13/Gulyás Edit/1974-09-02/4,Pécs Király utca 3,89000,6,92000,45,13
-14/Beke Tímea/1990-10-29/1,14/Nemesi Katalin/1981-12-18/5,Szeged Dóm tér 1,115000,10,120000,58,14
-15/Illés Noémi/1986-04-17/3,15/Márton Eszter/1978-08-13/7,Győr Baross út 6,98000,8,100000,48,15
-16/Simon Janka/1994-11-08/2,16/Deák Borbála/1986-02-24/4,Sopron Erzsébet utca 71,105000,12,110000,54,16
-17/Oláh Melinda/1991-01-03/1,17/Kádár Henrietta/1973-06-04/2,Kecskemét Rákóczi út 10,76000,5,75000,36,17
-18/Tar Dóra/1997-03-27/2,18/Horváth Lili/1984-07-29/5,Békéscsaba Kazinczy u. 11,82000,7,83000,40,18
-19/Bartha Júlia/1989-12-22/3,19/Fekete Ágnes/1970-01-31/8,Szekszárd Csokonai u. 4,93000,9,95000,49,19
-20/Lantos Emese/1993-06-14/1,20/Szűcs Mária/1975-05-06/3,Eger Dobó tér 5,102000,12,110000,53,20
-21/Balogh Lili/1995-02-11/2,21/Balogh János/1978-01-15/6,Budapest Vámház körút 3,130000,12,140000,59,21
-22/Szabó Réka/1992-09-09/1,22/Németh Zsuzsa/1982-03-19/4,Pécs Fő utca 18,78000,6,80000,39,22
-23/Makai Orsolya/1998-04-28/2,23/Kiss Emília/1976-07-12/5,Szeged Kárász utca 27,112000,10,120000,57,23
-24/Gyimesi Anna/1987-06-16/1,24/Takács Enikő/1974-09-23/3,Győr Árpád út 1,88000,7,90000,43,24
-25/Rácz Norbert/1994-01-29/2,25/Károlyi Kristóf/1983-02-01/4,Sopron Lackner Kristóf u. 14,101000,12,105000,51,25
-26/Kocsis Ádám/1996-03-02/1,26/Major Gergő/1979-06-21/6,Nyíregyháza Síp utca 3,74000,5,70000,34,26
-27/Török János/1988-10-08/3,27/Bognár László/1968-11-04/7,Eger Kossuth utca 2,92000,9,95000,50,27
-28/Fekete Pál/1990-12-13/2,28/Kis Valentin/1981-05-13/5,Pápa Esterházy út 6,87000,8,88000,42,28
-29/Vajda Gábor/1993-05-22/1,29/Bíró Balázs/1977-09-29/4,Kaposvár Ady Endre u. 11,99000,12,110000,56,29
-30/Novák Milán/1998-02-17/2,30/Juhász Kornél/1985-01-06/6,Debrecen Böszörményi út 88,113000,7,115000,48,30
-31/Kelemen Kristóf/1995-07-19/2,31/Szatmári Dénes/1972-08-18/5,Szeged Petőfi Sándor sgt. 12,87000,8,88000,44,31
-32/Deme Ákos/1991-03-08/3,32/Antal Marcell/1980-09-14/6,Budapest Rákóczi út 70,135000,12,140000,60,32
-33/Orsós Richárd/1997-02-10/1,33/Pintér Gábor/1969-03-19/2,Pécs Rókus utca 41,76000,6,78000,37,33
-34/Homola Zsolt/1989-11-22/2,34/Boros Sándor/1978-10-12/4,Debrecen Hatvan utca 13,90000,10,95000,46,34
-35/Zentai Bence/1996-06-05/3,35/Cseh Dóra/1975-12-28/5,Győr Mester utca 9,120000,12,125000,59,35
-36/Sztojka Adrián/1990-05-15/1,36/Siklósi Kitti/1983-08-04/3,Szeged Tavasz utca 2,67000,4,60000,32,36
-37/Veres Botond/1994-09-27/2,37/Fábián József/1971-07-01/5,Kaposvár Anna utca 14,82000,6,85000,40,37
-38/Somogyi Dániel/1988-04-12/2,38/Vida Noémi/1982-11-17/6,Budapest Lehel út 5,145000,12,150000,63,38
-39/Lukács Mirkó/1993-01-13/1,39/Szűcs Klára/1977-04-21/4,Sopron Mátyás király u. 10,94000,8,98000,47,39
-40/Kozma Patrik/1998-08-30/2,40/Szita Mária/1974-01-05/3,Debrecen Varga u. 23,78000,6,82000,41,40
-41/Görög Nándor/1991-10-09/3,41/Tüske Attila/1986-03-22/6,Szeged Kálvária sugárút 88,110000,10,115000,55,41
-42/Gelányi András/1997-05-19/1,42/Nyírő Edit/1970-07-31/7,Pécs Somogyi Béla út 2,98000,9,99000,49,42
-43/Kaposi Márk/1989-06-14/2,43/Visy Anikó/1981-02-02/4,Nyíregyháza Örökösföld 11,80000,7,83000,42,43
-44/Koszti Sándor/1996-01-11/3,44/Orosz Kitti/1983-10-29/6,Budapest Haller utca 22,132000,12,140000,61,44
-45/Horváth Olivér/1990-03-17/1,45/Tóth Diána/1979-11-26/3,Győr Mártírok u. 5,77000,5,80000,38,45
-46/Lendvai Kornél/1995-12-15/2,46/Bereg Tamás/1984-09-06/4,Szeged Tápai utca 3,84000,6,87000,41,46
-47/Tánczos Dénes/1987-01-24/3,47/Fitos Emese/1976-08-03/6,Sopron Deák tér 7,120000,12,125000,58,47
-48/Békési Nimród/1993-04-03/1,48/Somlai Ákos/1970-10-12/7,Debrecen Kassai út 91,90000,10,92000,45,48
-49/Fitos Zalán/1998-07-18/2,49/Horváth Zita/1982-01-22/4,Győr Teleki u. 31,78000,7,82000,40,49
-50/Móricz Tamás/1992-05-09/1,50/Németh Veronika/1975-05-19/3,Kaposvár Cseri út 18,74000,6,76000,39,50
-51/Harsányi Zsolt/1996-03-11/3,51/Tamási Luca/1987-04-07/5,Budapest Sas utca 1,150000,12,160000,66,51
-52/Bozsó Kristóf/1991-07-27/2,52/Benke Gabriella/1981-09-09/6,Pécs Ferencesek utcája 2,87000,8,91000,44,52
-53/Balogh Kevin/1994-11-10/1,53/Makai Dóra/1978-03-03/4,Szeged Dugonics tér 8,110000,10,118000,56,53
-54/Tornyai Marcell/1988-12-20/2,54/Ódor Piroska/1980-06-16/5,Győr Áchim András u. 5,78000,7,80000,40,54
-55/Szekeres Dániel/1997-01-17/3,55/Tiszai Noémi/1984-03-12/5,Debrecen Veres Péter u. 13,99000,9,102000,47,55
-56/Katona Gábor/1989-02-14/2,56/Batta Zoltán/1972-07-10/8,Szeged Kolozsvári tér 1,89000,6,91000,42,56
-57/Barna Márk/1995-08-23/1,57/Molnár Adél/1985-01-27/4,Sopron Kuruc dűlő 22,93000,8,95000,48,57
-58/Rónai Balázs/1987-05-29/2,58/Fodor Tamara/1979-02-14/4,Pécs Testvérvárosok tere 14,105000,12,110000,53,58
-59/Kulcsár Soma/1993-09-02/3,59/Sarkadi Kamilla/1986-04-06/7,Szolnok Baross út 15,90000,7,93000,46,59
-60/Korpási Áron/1996-06-18/1,60/Kurucz Máté/1975-08-01/3,Budapest Szépvölgyi út 102,140000,12,150000,64,60
-61/Benkő Erik/1988-01-30/2,61/Fehér Dóra/1977-03-13/4,Győr Kodály Zoltán u. 3,77000,6,80000,38,61
-62/Marton Vince/1994-10-19/1,62/László Fruzsina/1982-10-24/5,Szeged Madách u. 8,85000,8,88000,41,62
-63/Pálfi Bence/1997-12-27/2,63/Deme Ágnes/1974-12-05/6,Pécs Nagy Jenő u. 13,96000,9,98000,49,63
-64/Kárpáti Zsolt/1989-08-07/3,64/Antal Gyöngyi/1970-06-18/7,Sopron Béke út 5,112000,10,118000,57,64
-65/Máté Nándor/1993-02-11/1,65/Kristóf Szilvia/1983-04-26/4,Eger Lajos u. 66,88000,7,90000,43,65
-66/Gyetvai Zalán/1991-09-16/2,66/Barcsai Levente/1978-07-03/6,Budapest Fehérvári út 120,135000,12,140000,62,66
-67/Kósa Martin/1996-04-05/3,67/Fejér Noémi/1981-09-29/4,Győr Zrínyi u. 14,77000,5,80000,37,67
-68/Pintér Marcell/1988-03-01/1,68/Botos Veronika/1979-11-22/3,Pécs Tímár utca 19,82000,7,85000,40,68
-69/Finta Dániel/1995-12-03/2,69/Horváth Boróka/1984-01-19/5,Szeged Oroszlán utca 3,98000,10,100000,48,69
-70/Lakatos Kevin/1990-07-14/1,70/Gáborfi Sándor/1977-08-28/4,Kecskemét Károlyi u. 7,74000,6,76000,38,70
-71/Nagy Roland/1994-03-05/3,71/Kállai Éva/1976-09-25/5,Pécs Ágoston tér 4,89000,8,92000,44,71
-72/Bartal Zénó/1997-01-09/2,72/Orbán Levente/1980-03-12/6,Budapest Akácfa utca 88,145000,12,150000,63,72
-73/Bőhm Balázs/1989-11-30/3,73/Bede Nikolett/1972-12-09/7,Győr Bécsi kapu tér 3,86000,8,88000,41,73
-74/Kispál Soma/1996-05-26/1,74/Szölősi Ivett/1983-06-17/3,Szeged Móra park 2,94000,9,96000,47,74
-75/Törtei Bence/1993-07-13/2,75/Merényi Zoltán/1978-03-07/6,Pécs Felsővámház utca 19,102000,11,105000,53,75
-76/Sinkó Martin/1991-04-12/1,76/Jenei Dániel/1980-01-30/4,Sopron József Attila u. 12,90000,8,95000,45,76
-77/Farkas Ákos/1998-03-21/3,77/Tolnai Mária/1975-02-18/5,Nyíregyháza Hunyadi u. 23,78000,6,80000,39,77
-78/Balogh Benjámin/1990-06-03/2,78/Horváth Dalma/1984-04-27/6,Budapest Thököly út 15,130000,12,138000,58,78
-79/Tőkés Attila/1995-11-19/1,79/Németh Brigitta/1970-10-02/7,Szeged Körtöltés utca 12,86000,8,90000,43,79
-80/Téglás Mirkó/1997-09-25/2,80/Pálfi Judit/1982-07-14/4,Győr Bácsai út 44,79000,6,82000,40,80
-81/Kása László/1988-12-06/3,81/Veress Tímea/1977-01-28/4,Sopron Várkerület 3,112000,11,118000,56,81
-82/Bartos Vince/1996-02-17/1,82/Mezei Noémi/1974-03-21/5,Győr Lajta út 23,90000,9,92000,48,82
-83/Till Attila/1992-01-27/2,83/Szöllősi Mira/1985-05-16/6,Pécs Rácvárosi út 5,87000,7,90000,42,83
-84/Simon Nátán/1993-10-14/3,84/Kertész Ágnes/1981-09-12/4,Eger Mátyás király u. 3,78000,6,80000,38,84
-85/Tamási Boldizsár/1987-03-03/2,85/Gombos Dorina/1979-11-29/5,Kaposvár Fő u. 13,92000,8,95000,45,85
-86/Kadlicsek Ádám/1995-08-22/1,86/Fábián Annamária/1976-04-04/3,Szeged Ságvári tér 2,81000,7,83000,41,86
-87/Tamás Ottó/1991-05-09/3,87/Komáromi Kinga/1978-02-11/6,Pécs Basamalom utca 12,89000,9,91000,46,87
-88/Lőrincz Miklós/1996-12-18/2,88/Kopasz Mónika/1983-08-23/4,Győr Vág utca 9,84000,6,87000,39,88
-89/Kása Olivér/1998-04-07/1,89/Gombkötő Imre/1972-02-07/8,Budapest Üllői út 233,142000,12,150000,65,89
-90/Tanka Zsolt/1993-09-16/2,90/Somi Judit/1980-07-05/4,Szeged Mars tér 4,87000,8,90000,43,90
-91/Tornai Soma/1995-01-06/3,91/Kovács Viola/1984-05-21/5,Pécs Szigeti út 77,96000,10,100000,48,91
-92/Hécz Benedek/1990-11-11/1,92/Pataki Diána/1976-10-25/3,Győr Móricz Zsigmond u. 5,78000,6,80000,38,92
-93/Vida Csaba/1991-02-08/3,93/Kürtösi Anna/1970-12-12/8,Sopron Virágvölgy u. 3,108000,11,112000,55,93
-94/Marjai Balázs/1997-07-30/2,94/Serfőző Fatime/1981-03-14/4,Kaposvár Donner u. 22,84000,7,86000,40,94
-95/Balogh Gellért/1988-06-26/1,95/Péterfi Éva/1979-09-20/4,Szeged Érsek utca 15,90000,9,95000,47,95
-96/Szita Gergely/1994-12-21/2,96/Vas Nóra/1984-03-18/6,Pécs Surányi út 11,83000,6,85000,41,96
-97/Virág Zsolt/1995-03-31/3,97/Kárpáti Ilona/1975-05-19/5,Győr Reviczky u. 2,97000,8,100000,50,97
-98/Kulman Ákos/1992-10-07/1,98/Füleki Rebeka/1983-11-27/4,Budapest Bartók Béla út 21,138000,12,145000,62,98
-99/Lukács Elemér/1996-01-19/2,99/Bánfi Noémi/1980-02-14/6,Szeged Hódmezővásárhelyi út 5,90000,9,93000,46,99
-100/Nemes Patrik/1993-05-25/1,100/Lőrincz András/1978-08-30/4,Kaposvár Füredi út 19,78000,6,80000,38,100
-101/Szabados Máté/1991-07-19/2,101/Szederkényi Tímea/1979-01-13/4,Sopron Hársfa út 3,92000,8,95000,45,101
-102/Csibi Ákos/1997-03-17/1,102/Barabás Sarolta/1984-04-15/5,Pécs Aradi vértanúk útja 17,86000,7,88000,42,102
-103/Bujdosó Levente/1989-11-03/3,103/Fridrich Kitti/1976-02-28/6,Győr Virág út 19,102000,10,105000,52,103
-104/Székely Sándor/1996-01-11/2,104/Tornyai András/1981-05-24/4,Kaposvár Béla király utca 9,84000,6,86000,40,104
-105/Kertész Zalán/1993-02-26/3,105/Tóth Dénes/1974-09-10/7,Budapest Kossuth Lajos utca 3,145000,12,150000,63,105
-106/Madarász Botond/1991-04-21/1,106/Berkes Tünde/1983-03-30/4,Szeged Vasas Sándor u. 12,89000,8,92000,47,106
-107/Illés Marcell/1987-12-17/2,107/Rátkai Levente/1970-06-16/8,Debrecen Egyetem tér 1,78000,6,80000,38,107
-108/Németh Csaba/1995-10-08/3,108/Komjáti Erika/1982-01-18/5,Pécs Nagy Lajos király útja 44,85000,7,87000,41,108
-109/Keszthelyi Soma/1998-06-28/1,109/Sinka Tamás/1978-10-05/4,Sopron Zsilip utca 11,91000,9,94000,46,109
-110/Kosa Márton/1992-03-09/2,110/Szloboda Dorina/1980-02-26/5,Győr Búza utca 88,77000,6,80000,39,110
-111/Tarján Ádám/1994-08-19/3,111/Keresztes Zsolt/1972-04-07/6,Kaposvár Hársfa u. 5,86000,7,90000,42,111
-112/Farkas Róbert/1989-05-16/1,112/Komlósi Fanni/1977-03-19/3,Budapest Alkotmány utca 4,132000,12,140000,62,112
-113/Deák Dániel/1996-09-22/2,113/Demeter Márta/1983-07-13/6,Pécs Jurisics Miklós utca 15,78000,7,80000,38,113
-114/Vida Balázs/1991-01-04/3,114/Németh Renáta/1981-12-08/4,Debrecen Simonffy utca 18,90000,8,94000,45,114
-115/Szűcs Nándor/1997-02-27/1,115/Máté Brigitta/1974-01-29/5,Szeged Felső Tisza-part 3,112000,10,115000,54,115
-116/Kovács István/1993-08-14/2,116/Szabó Andrea/1985-03-17/6,Pécs Jókai tér 11,88000,7,90000,43,116
-117/Sarkadi Soma/1989-04-25/3,117/Fóti Lilla/1979-05-09/4,Győr Hédervári út 6,82000,6,85000,41,117
-118/Szenes Ákos/1996-11-05/1,118/Barcza Melinda/1982-11-22/6,Kaposvár Virág utca 33,78000,5,80000,37,118
-119/Romhányi Csanád/1992-02-18/2,119/Mikola Magdolna/1976-01-16/3,Budapest Tímár u. 23,140000,12,145000,63,119
-120/Kerekes Zalán/1995-12-13/3,120/Veres Rebeka/1984-09-14/5,Szeged Attila utca 41,99000,9,102000,48,120
-121/Kaposi Márton/1993-04-12/1,121/Barati Sára/1979-03-21/5,Pécs Magyar utca 22,85000,7,88000,42,121
-122/Várkonyi Erik/1997-01-08/2,122/Szederkényi Klára/1980-10-19/6,Győr Dózsa György rakpart 5,78000,6,81000,39,122
-123/Szöllősi Márton/1989-08-21/3,123/Földesi Tibor/1974-11-16/7,Kaposvár Köztársaság út 4,92000,9,95000,47,123
-124/Kardos Bálint/1991-06-03/2,124/Lukácsi Nóra/1982-02-01/5,Szeged Rókusi körút 99,88000,8,90000,44,124
-125/Demeter Dávid/1996-05-27/1,125/Balogh Hajnalka/1985-06-14/4,Budapest Váci út 33,144000,12,150000,64,125
-126/Tompa Ákos/1998-03-19/2,126/Fekete Gabriella/1977-12-30/6,Pécs Engel János u. 10,85000,7,87000,40,126
-127/Fehér Roland/1994-11-30/1,127/László Dominika/1981-07-02/5,Kaposvár Mező u. 12,76000,6,78000,38,127
-128/Szántó Milán/1988-09-16/3,128/Kurucz Fruzsina/1973-09-05/7,Szeged Alsókikötő sor 22,92000,9,93000,48,128
-129/Berkes Dániel/1990-12-02/2,129/Móré Ádám/1980-05-12/3,Pécs Rét utca 8,83000,6,85000,42,129
-130/Kapczár Kristóf/1995-02-09/1,130/Ádám Katalin/1979-08-24/4,Győr Puskás Tivadar u. 4,98000,8,100000,49,130
-131/Lukács Dávid/1993-10-28/2,131/Kertesi Bernadett/1984-03-11/6,Budapest Szentkirályi utca 15,130000,12,135000,60,131
-132/Bagdi Bence/1991-04-08/3,132/Sallai Tibor/1978-01-14/4,Szeged Pulz utca 9,86000,7,88000,43,132
-133/Naszvadi Soma/1996-06-29/1,133/Bagi Bettina/1983-12-03/5,Kaposvár Virág utca 55,77000,5,80000,38,133
-134/Makai Patrik/1987-09-20/2,134/Antalné Rácz Anna/1975-02-06/6,Pécs Sörház utca 3,91000,9,94000,46,134
-135/Szakács Marcell/1992-07-15/3,135/Medveczki Klára/1981-11-27/5,Budapest Lánchíd utca 7,140000,12,148000,63,135
-136/Végvári Tibor/1997-11-12/1,136/Elek Mónika/1974-04-13/8,Győr Eötvös park 2,82000,7,84000,41,136
-137/Köbli Ákos/1994-05-19/3,137/Kurucz Melinda/1977-09-04/6,Szeged Tisza Lajos körút 10,88000,8,91000,45,137
-138/Czifra Róbert/1990-01-26/1,138/Füzesi Lívia/1982-10-03/5,Pécs Megyeri út 22,80000,6,82000,39,138
-139/Fekete Ábel/1996-12-18/2,139/Horváth István/1979-06-29/4,Kaposvár Jutai út 19,84000,7,87000,42,139
-140/Szűcs Zsolt/1998-07-07/3,140/Horváth Tünde/1983-03-02/6,Budapest Bajcsy-Zsilinszky út 42,133000,12,140000,61,140
-141/Kristóf Ádám/1993-01-31/1,141/Fillér Júlia/1975-12-11/4,Győr Kazinczy Ferenc u. 7,88000,7,90000,43,141
-142/Kerekes Soma/1991-09-05/3,142/Németh Tamara/1984-07-21/6,Pécs Tímár u. 14,82000,6,85000,41,142
-143/Tarján Csaba/1989-06-21/2,143/Lantos Pálma/1972-11-10/7,Szeged Rókusi körút 121,95000,9,98000,48,143
-144/Fülöp Márk/1996-04-16/1,144/Demény Márton/1981-09-14/4,Kaposvár Petőfi tér 3,78000,5,80000,37,144
-145/Vadász László/1994-12-23/3,145/Solti Eszter/1978-06-07/6,Győr Újkapu u. 19,84000,7,87000,42,145
-146/Köteles Kevin/1991-02-26/1,146/Szalai Zsófia/1980-01-22/5,Budapest Soroksári út 55,148000,12,155000,67,146
-147/Rimóczi Nándor/1996-05-14/2,147/Lóczi Katalin/1983-04-18/4,Pécs Nagyárpád utca 2,90000,8,93000,45,147
-148/Kende Róbert/1989-03-07/3,148/Kapronczai Emese/1977-05-19/6,Szeged József Attila sugárút 33,83000,6,85000,40,148
-149/Andorka Soma/1997-08-29/1,149/Borbás Lili/1974-09-23/7,Kaposvár Dombóvári út 9,82000,6,85000,41,149
-150/Kunkli Zsolt/1993-09-20/2,150/Nagy Márta/1982-12-02/5,Győr Jankovich u. 5,96000,8,100000,49,150
-151/Kiss Zalán/1990-10-11/3,151/Komlós Áron/1971-08-14/8,Pécs Bajcsy-Zsilinszky utca 29,94000,9,97000,47,151
-152/Bede Balázs/1995-11-04/1,152/Makai Ibolya/1983-02-19/4,Szeged Szentháromság utca 11,85000,7,88000,42,152
-153/Pilinyi Kristóf/1987-07-13/2,153/Gencsi Júlia/1980-05-06/6,Győr Nagy Imre út 2,78000,6,80000,38,153
-154/Tasnádi Dénes/1992-08-25/3,154/Sárközi Edit/1978-11-12/5,Kaposvár Nádor u. 12,82000,7,85000,41,154
-155/Virág Martin/1994-01-15/1,155/Széplaki Sára/1981-03-22/4,Pécs Alkotmány utca 33,98000,10,102000,49,155
-156/Bartók Mirkó/1989-09-29/2,156/Szatmári Dóra/1975-07-14/6,Szeged Retek u. 22,88000,8,91000,45,156
-157/Antal Soma/1997-11-20/3,157/Gyenes Márton/1982-10-11/4,Győr Papi Lajos u. 5,82000,6,85000,40,157
-158/Köteles Dávid/1991-06-30/1,158/Tóth Enikő/1979-01-08/5,Budapest Pozsonyi út 12,138000,12,145000,62,158
-159/Szabó Nándor/1996-03-11/2,159/Fehér Janka/1974-08-16/7,Pécs Nagy Lajos király u. 2,80000,6,83000,40,159
-160/Farkas Márk/1993-07-07/3,160/Sinkó Tímea/1980-12-28/6,Szeged Szentháromság u. 23,90000,9,93000,46,160
-161/Kurucz Erik/1990-02-05/1,161/Balogh Szilvia/1977-03-17/4,Győr Radnóti u. 15,78000,6,80000,38,161
-162/Somlai Roland/1995-10-12/2,162/Kalocsai Diána/1983-09-24/6,Kaposvár Noszlopy Gáspár utca 4,86000,7,88000,43,162
-163/Bagó Tamás/1988-01-10/3,163/Nyerges Blanka/1970-04-13/8,Budapest Fővám tér 1,150000,12,160000,67,163
-164/Szentkirályi Máté/1996-06-18/1,164/Tánczos Edit/1984-05-21/5,Szeged Ortutay utca 3,90000,9,93000,47,164
-165/Szántó Levente/1994-09-08/2,165/Varsányi Nóra/1978-10-27/6,Pécs Siklósi út 88,83000,7,85000,42,165
-166/Orbán Tamás/1993-05-14/3,166/Szalay Ágnes/1981-11-04/4,Győr Vámosszabadi út 11,82000,6,84000,41,166
-167/Sánta Richárd/1998-04-01/1,167/Kántor Dénes/1974-02-06/7,Kaposvár Vár utca 13,79000,6,82000,40,167
-168/Zentai Marcell/1991-07-22/2,168/Kulcsár Viktória/1982-05-08/5,Pécs Babits Mihály utca 7,88000,8,90000,44,168
-169/Kiss Gellért/1997-12-03/3,169/Oláh Márta/1976-06-24/3,Szeged Hóbiárt út 12,80000,5,82000,38,169
-170/Hoffer Balázs/1989-03-09/1,170/Kurdi Patrícia/1980-04-16/4,Győr Akadémia u. 15,84000,7,87000,42,170
-171/Szabadi Soma/1994-11-18/2,171/Kása Andrea/1983-12-29/6,Kaposvár Rákóczi tér 2,89000,8,92000,45,171
-172/Gyulai Márk/1992-09-21/3,172/Fenyvesi Irén/1977-01-14/4,Pécs Kertváros u. 1,83000,7,85000,42,172
-173/Bugyi Levente/1996-08-10/2,173/Gombos Melinda/1984-11-03/5,Szeged Kenderföld utca 8,90000,9,93000,47,173
-174/Nagy Kornél/1993-06-11/1,174/Tar Bernadett/1980-07-22/6,Győr Kõrösi út 3,78000,6,80000,38,174
-175/Horváth Csanád/1989-10-23/3,175/Tarján Márta/1974-10-02/7,Budapest Bimbó út 97,148000,12,155000,67,175
-176/Ladányi András/1995-02-15/2,176/Fülöp Ágota/1979-09-27/5,Kaposvár Hársfa u. 88,86000,7,88000,43,176
-177/Csernátony Márk/1998-03-11/1,177/Mayer Edit/1982-03-03/4,Szeged Holló utca 7,78000,6,81000,39,177
-178/Ács Dominik/1990-06-09/3,178/Sebestyén Adél/1978-01-18/6,Pécs Zsolnay Vilmos u. 14,84000,7,86000,42,178
-179/Zsembinszki Soma/1994-12-14/2,179/Molnár Piroska/1981-10-09/5,Győr Liget u. 19,90000,9,93000,47,179
-180/Tálosi Ádám/1991-04-17/1,180/Bácskai Lilla/1984-02-16/4,Budapest Nagyvárad tér 1,140000,12,148000,63,180
-181/Erdei Máté/1996-09-28/3,181/Tálosi Viktória/1975-06-03/6,Szeged Eperfa u. 2,86000,7,88000,43,181
-182/Kelemen Kevin/1993-03-22/2,182/Széles Diána/1980-08-24/4,Pécs Köztársaság tér 12,78000,6,80000,38,182
-183/Demény Márk/1989-01-16/1,183/Farkas Melinda/1977-05-18/6,Győr Pacsirta u. 22,82000,7,85000,41,183
-184/Polgári Zalán/1998-07-07/2,184/Balogh Nóra/1983-11-07/5,Kaposvár Béla király u. 4,88000,8,90000,44,184
-185/Szamosi Bence/1995-05-29/1,185/Kondor Fanni/1978-04-11/3,Szeged Gyík utca 5,80000,5,82000,38,185
-186/Huszár Dániel/1991-11-13/3,186/Marosi Kinga/1970-09-22/7,Budapest Római part 8,148000,12,155000,68,186
-187/Biró Gábor/1988-04-03/2,187/Árkosi Eszter/1974-05-15/6,Pécs Diadal utca 7,83000,6,85000,42,187
-188/Dávid Zalán/1997-01-30/1,188/Kozma Adél/1981-10-29/5,Győr Révai Miklós utca 1,79000,6,81000,39,188
-189/Fodor Ákos/1993-10-22/3,189/Laki Viola/1979-03-30/4,Szeged Hegedűs u. 22,87000,7,90000,44,189
-190/Salánki Márk/1996-12-04/2,190/Tarcsay Erzsébet/1977-11-19/6,Kaposvár Füredi út 44,84000,6,86000,41,190
-191/Mózes Tamás/1990-02-12/3,191/Kecskeméti Ágnes/1975-12-26/5,Pécs Tettye u. 3,90000,9,93000,47,191
-192/Seres Dániel/1994-08-25/1,192/Duna Gabriella/1983-03-08/4,Szeged Víztorony tér 2,82000,6,85000,40,192
-193/Toldi Soma/1991-01-05/2,193/Tamás Luca/1980-07-12/5,Budapest József körút 88,138000,12,145000,62,193
-194/Sipos Mirkó/1997-06-13/3,194/Horváth Gitta/1974-08-09/6,Kaposvár Zárda u. 2,80000,6,83000,39,194
-195/Kiss Balázs/1989-11-29/1,195/Fazekas Helga/1982-01-22/4,Pécs Mór utca 17,90000,8,93000,46,195
-196/Nagy Soma/1994-04-18/2,196/Mezősi Tímea/1979-11-01/6,Szeged Hunyadi tér 1,87000,7,90000,44,196
-197/Balogh Kristóf/1991-09-02/3,197/Majláth Attila/1977-02-08/5,Budapest Allee környéke 19,146000,12,152000,66,197
-198/Farkas Kevin/1996-07-15/1,198/Orosz Gerda/1980-03-14/4,Győr Szigethy Attila út 18,80000,6,83000,40,198
-199/Tényai Márk/1993-03-05/2,199/Szabó Flóra/1982-02-26/6,Pécs Ágoston tér 11,82000,6,85000,41,199
-200/Keszi Tamás/1987-02-27/3,200/Borbély Anita/1974-06-04/7,Kaposvár Jókai utca 8,89000,7,92000,45,200
-201/Balla Dominik/1992-04-18/2,201/Simon Eszter/1981-07-09/5,Budapest Dohány utca 33,136000,12,145000,44,201
-202/Gál Vince/1995-10-22/1,202/Papp Nikolett/1979-03-27/4,Debrecen Szent Anna utca 12,88000,9,92000,46,202
-203/Kiss Botond/1988-01-07/3,203/Mészáros Zoltán/1976-11-30/6,Pécs Jókai tér 8,95000,10,99000,49,203
-204/Nagy Csanád/1994-08-14/2,204/Török Réka/1983-05-05/5,Szeged Tisza Lajos krt. 78,108000,12,115000,42,204
-205/Székely Márk/1997-03-19/1,205/Fekete Gábor/1974-09-16/7,Győr Rába Quelle tér 3,92000,8,96000,51,205
-206/Váradi Noel/1990-12-04/2,206/Horváth Tünde/1980-02-28/4,Sopron Széchenyi tér 11,114000,11,120000,45,206
-207/Pál Richárd/1993-06-30/3,207/Kovács Imre/1977-10-13/6,Budapest Podmaniczky utca 45,142000,12,150000,48,207
-208/Lakatos Zalán/1996-09-11/1,208/Szabó Diána/1985-04-22/5,Debrecen Faraktár utca 19,79000,7,82000,40,208
-209/Farkas Kolos/1989-05-27/2,209/Németh Attila/1972-08-03/8,Pécs Megye utca 5,89000,9,93000,53,209
-210/Tóth Ábel/1995-02-15/1,210/Balogh Kinga/1982-12-07/4,Szeged Gogol utca 22,97000,10,102000,43,210
-211/Molnár Erik/1991-11-09/3,211/Varga László/1978-06-18/6,Győr Aradi vértanúk útja 33,105000,12,110000,47,211
-212/Simon Nimród/1998-07-23/2,212/Kiss Bernadett/1975-01-29/5,Budapest Erzsébet krt. 12,148000,12,155000,50,212
-213/Orsós Kevin/1994-03-06/1,213/Takács Ferenc/1980-09-14/4,Sopron Lackner Kristóf u. 55,109000,11,115000,45,213
-214/Horváth Alex/1987-08-31/2,214/Fodor Petra/1979-04-11/6,Pécs Bajcsy-Zsilinszky utca 7,93000,8,97000,46,214
-215/Varga Hunor/1993-12-17/3,215/Pintér Szilvia/1976-07-25/5,Debrecen Csapó utca 40,86000,9,90000,49,215
-216/Németh Olivér/1996-05-02/1,216/Juhász Márton/1983-10-08/4,Szeged Boldogasszony sgt. 15,101000,12,108000,42,216
-217/Kovács Benett/1990-01-26/2,217/Szűcs Anita/1974-03-19/7,Budapest Rákóczi út 88,140000,12,148000,51,217
-218/Szabó Levente/1995-09-13/1,218/Magyar Katalin/1981-11-05/5,Győr Bajcsy-Zsilinszky út 21,99000,10,104000,44,218
-219/Balogh Milán/1988-04-29/3,219/Fehér István/1977-02-14/6,Pécs Rákóczi út 44,91000,8,95000,48,219
-220/Takács Zente/1997-07-08/2,220/Győrffy Zsófia/1985-06-27/4,Szeged Londoni krt. 3,106000,11,112000,40,220
-221/Fekete Dominik/1992-10-21/1,221/Kiss Tamás/1970-12-03/8,Budapest Wesselényi utca 19,135000,12,142000,55,221
-222/Papp Zente/1994-02-05/2,222/Nagy Emese/1982-08-17/5,Debrecen Bethlen utca 9,84000,7,88000,43,222
-223/Mészáros Noel/1989-11-18/3,223/Tóth Zsolt/1978-05-30/6,Sopron Ógabona tér 4,117000,12,124000,47,223
-224/Katona Áron/1996-03-27/1,224/Szalai Viktória/1975-09-08/5,Pécs Irgalmasok utcája 12,88000,9,92000,50,224
-225/Gulyás Márk/1991-07-14/2,225/Barta László/1980-01-22/4,Budapest Király utca 101,152000,12,160000,45,225
-226/Illés Botond/1998-12-01/1,226/Kovács Judit/1984-04-15/6,Szeged Stefánia 7,99000,10,105000,41,226
-227/Seres Csongor/1993-05-20/3,227/Horváth Gergely/1976-10-29/7,Győr Szigethy Attila út 15,96000,8,100000,49,227
-228/Török Mirkó/1990-08-09/2,228/Farkas Ramóna/1979-03-04/5,Debrecen Klauzál utca 5,81000,7,85000,46,228
-229/Szűcs Ákos/1995-01-31/1,229/Németh Dávid/1983-07-18/4,Budapest József krt. 55,138000,12,146000,42,229
-230/László Benedek/1997-06-25/2,230/Varga Lilla/1974-11-12/6,Pécs Mária utca 33,94000,11,99000,51,230
-231/Fodor Zalán/1988-09-04/3,231/Szabó András/1981-02-26/5,Szeged Alsó kikötő sor 9,103000,12,110000,44,231
-232/Kiss Nimród/1994-04-11/1,232/Balogh Erika/1977-08-07/7,Győr Radnóti utca 22,101000,9,106000,48,232
-233/Nagy Kevin/1996-10-16/2,233/Tóth Mónika/1985-05-19/4,Budapest Kazinczy utca 41,144000,12,152000,40,233
-234/Varga Patrik/1991-03-08/1,234/Papp Csaba/1972-12-21/8,Sopron Templom utca 8,112000,10,118000,53,234
-235/Horváth Csanád/1998-07-30/2,235/Kovács Orsolya/1980-06-14/5,Debrecen Simonyi út 17,87000,8,91000,45,235
-236/Szabó Hunor/1993-11-23/3,236/Fekete Zoltán/1978-09-27/6,Pécs Dischka Győző utca 3,90000,9,94000,47,236
-237/Molnár Alex/1989-02-19/1,237/Nagy Vivien/1983-01-05/4,Szeged Roosevelt tér 5,109000,12,116000,42,237
-238/Pintér Zente/1995-05-07/2,238/Takács Róbert/1975-10-18/7,Budapest Akácfa utca 33,149000,12,157000,50,238
-239/Tóth Noel/1997-09-28/1,239/Simon Patrícia/1982-04-03/5,Győr Munkácsy Mihály utca 11,98000,10,103000,43,239
-240/Kovács Kolos/1990-12-12/3,240/Horváth Bence/1979-07-26/6,Pécs Alkotmány utca 19,92000,8,96000,46,240
-241/Farkas Ábel/1994-08-03/2,241/Varga Klaudia/1984-11-09/4,Debrecen Darabos utca 6,83000,7,87000,41,241
-242/Németh Erik/1996-01-17/1,242/Szabó György/1976-03-22/8,Budapest Klauzál tér 9,141000,12,149000,49,242
-243/Balogh Benett/1992-06-05/2,243/Kiss Dorina/1981-09-15/5,Sopron Előkapu 4,108000,11,114000,44,243
-244/Takács Olivér/1988-10-29/3,244/Fodor Mátyás/1970-05-08/7,Pécs Kálvária utca 12,89000,9,93000,55,244
-245/Simon Zente/1995-04-14/1,245/Nagy Eszter/1983-02-27/4,Szeged Takarék utca 3,104000,12,111000,42,245
-246/Papp Hunor/1997-11-20/2,246/Tóth Kitti/1978-08-11/6,Debrecen Egyetem sugárút 55,95000,10,100000,47,246
-247/Mészáros Csongor/1991-03-03/1,247/Kovács Sándor/1975-12-04/5,Budapest Teréz krt. 41,153000,12,162000,50,247
-248/Katona Ákos/1998-07-27/3,248/Balázs Réka/1980-04-18/6,Győr Baross Gábor út 33,102000,9,107000,45,248
-249/Gulyás Mirkó/1993-10-10/2,249/Szalai István/1985-06-30/4,Pécs Zsolnay Vilmos út 77,97000,11,102000,40,249
-250/Seres Benedek/1996-02-24/1,250/Fehér Luca/1977-01-13/7,Szeged Jósika utca 5,99000,8,104000,48,250
-251/Illés Zalán/1990-09-08/2,251/Juhász Noémi/1982-10-26/5,Budapest Váci utca 82,158000,12,168000,43,251
-252/Török Csanád/1994-05-19/3,252/Németh Ádám/1974-07-07/6,Debrecen Péterfia utca 44,88000,9,92000,51,252
-253/Szűcs Noel/1997-12-15/1,253/Varga Zsófia/1981-03-29/4,Sopron Frankel Leó utca 11,113000,12,119000,44,253
-254/Lakatos Kolos/1992-08-02/2,254/Kiss Levente/1979-11-17/7,Pécs Ifjúság útja 6,91000,10,96000,46,254
-255/Fodor Ábel/1995-01-28/1,255/Horváth Panna/1984-05-04/5,Budapest Március 15. tér 8,147000,12,155000,41,255
-256/Kovács Dominik/1989-06-13/3,256/Szabó Marcell/1976-09-21/6,Győr Szent István út 10,107000,11,113000,49,256
-257/Szabó Erik/1996-11-07/2,257/Tóth Boglárka/1983-02-15/4,Debrecen Füvészkert utca 19,85000,8,89000,42,257
-258/Nagy Benett/1991-04-22/1,258/Farkas Gábor/1970-08-08/8,Pécs Hungária utca 33,93000,9,97000,55,258
-259/Varga Zente/1998-09-06/2,259/Nagy Gréta/1980-12-20/5,Szeged Kelemen utca 12,106000,12,113000,45,259
-260/Horváth Hunor/1993-03-11/3,260/Balogh Tamás/1978-06-03/6,Budapest Corvin tér 5,143000,12,151000,47,260
-261/Molnár Alex/1995-07-25/1,261/Takács Lili/1985-10-17/4,Győr Tarcsay utca 3,99000,10,105000,40,261
-262/Pintér Olivér/1990-12-09/2,262/Simon Dániel/1975-04-01/7,Debrecen Kartács utca 22,82000,7,86000,50,262
-263/Tóth Csongor/1997-05-04/1,263/Kovács Fanni/1982-09-14/5,Pécs Endresz György út 9,96000,11,101000,43,263
-264/Kiss Noel/1994-10-18/3,264/Fodor Krisztina/1977-01-27/6,Sopron Várisi út 44,110000,12,116000,48,264
-265/Németh Ákos/1996-02-03/2,265/Varga Bence/1981-07-11/4,Budapest Blaha Lujza tér 6,150000,12,158000,44,265
-266/Balogh Kolos/1989-08-27/1,266/Szabó Veronika/1979-03-24/6,Szeged Bérpalota utca 1,101000,10,107000,46,266
-267/Takács Ábel/1995-11-12/2,267/Nagy Attila/1984-05-06/5,Győr Nádor utca 15,103000,9,108000,41,267
-268/Simon Dominik/1991-01-30/3,268/Horváth Lóránt/1976-11-19/7,Pécs Vasút utca 7,89000,8,93000,49,268
-269/Farkas Erik/1998-06-16/1,269/Tóth Szonja/1983-08-02/4,Debrecen Mester utca 33,86000,7,90000,42,269
-270/Papp Benett/1993-09-29/2,270/Kiss Mátyás/1974-12-15/8,Budapest Ferenciek tere 10,156000,12,165000,51,270
-271/Mészáros Zente/1996-04-05/1,271/Balogh Eszter/1980-02-08/5,Szeged Aradi vértanúk tere 4,108000,12,115000,45,271
-272/Katona Hunor/1990-07-21/3,272/Fehér Zoltán/1978-10-25/6,Győr Jókai utca 19,100000,10,105000,47,272
-273/Gulyás Csongor/1997-12-08/2,273/Juhász Petra/1985-04-12/4,Pécs Tüskésréti út 5,94000,11,99000,40,273
-274/Seres Noel/1992-05-14/1,274/Németh Csaba/1972-09-03/7,Budapest Astoria 3,145000,12,153000,53,274
-275/Illés Kolos/1995-10-27/2,275/Varga Dorka/1981-06-18/5,Debrecen Bayk András kert 11,84000,8,88000,44,275
-276/Török Ábel/1998-03-02/1,276/Kovács Bendegúz/1979-11-30/6,Sopron Ikva utca 7,115000,12,121000,46,276
-277/Szűcs Dominik/1994-08-19/3,277/Szabó Liliom/1984-01-14/4,Pécs Finn utca 22,91000,9,95000,41,277
-278/Lakatos Erik/1991-01-05/2,278/Takács Réka/1976-07-27/7,Budapest Kálvin tér 9,152000,12,160000,49,278
-279/Fodor Benett/1996-06-11/1,279/Horváth Zorka/1983-03-09/5,Győr Révai Miklós utca 15,106000,10,112000,42,279
-280/Kovács Zente/1989-11-26/2,280/Nagy Dominik/1975-05-22/6,Debrecen Hatvani István utca 4,87000,9,91000,50,280
-281/Szabó Hunor/1997-04-13/3,281/Balogh Jázmin/1980-09-06/4,Szeged Szentháromság utca 33,104000,12,111000,45,281
-282/Nagy Csongor/1993-09-28/1,282/Fekete Olivér/1978-12-19/7,Pécs Aidinger János út 8,95000,11,100000,47,282
-283/Varga Noel/1995-02-17/2,283/Tóth Blanka/1985-08-04/5,Budapest Deák Ferenc tér 5,159000,12,168000,40,283
-284/Horváth Kolos/1990-07-03/1,284/Kiss Zsombor/1977-02-17/6,Győr Árpád út 44,101000,10,107000,48,284
-285/Molnár Ábel/1998-12-20/3,285/Simon Nóra/1982-10-31/4,Debrecen Csemete utca 12,83000,8,87000,43,285
-286/Pintér Dominik/1994-05-07/2,286/Varga Gergely/1974-04-25/8,Pécs Makay István út 3,92000,9,96000,51,286
-287/Tóth Erik/1996-10-22/1,287/Németh Hanna/1981-06-08/5,Szeged Rerrich Béla tér 1,107000,12,114000,44,287
-288/Kiss Benett/1991-03-09/2,288/Balázs Patrik/1979-11-21/6,Budapest Oktogon 7,154000,12,163000,46,288
-289/Németh Zente/1997-08-25/1,289/Takács Eliza/1984-01-04/4,Győr Liszt Ferenc utca 28,104000,11,110000,41,289
-290/Balogh Hunor/1992-01-12/3,290/Horváth Csenge/1976-07-18/7,Debrecen Lehel utca 19,89000,10,94000,49,290
-291/Takács Csongor/1995-06-28/2,291/Szabó Milán/1983-09-02/5,Pécs Pavilon utca 6,93000,9,97000,42,291
-292/Simon Noel/1998-11-14/1,292/Kovács Lelle/1980-03-16/6,Budapest Andrássy út 60,165000,12,175000,45,292
-293/Farkas Kolos/1993-04-01/2,293/Nagy Botond/1975-12-29/7,Szeged Feketesas utca 11,99000,8,104000,50,293
-294/Papp Ábel/1996-09-17/3,294/Tóth Zalán/1982-05-13/4,Győr Batsányi János utca 5,98000,10,103000,43,294
-295/Mészáros Dominik/1990-02-04/1,295/Balogh Szofi/1978-08-26/6,Pécs Klimó György utca 9,94000,11,99000,47,295
-296/Katona Erik/1997-07-20/2,296/Fehér Nimród/1985-10-09/5,Debrecen Füredi kapu 2,86000,7,90000,40,296
-297/Gulyás Benett/1994-12-06/1,297/Juhász Lívia/1977-04-22/7,Budapest Nyugati tér 4,149000,12,157000,48,297
-298/Seres Zente/1991-05-23/3,298/Németh Konrád/1981-01-05/4,Sopron Csatkai Endre utca 33,111000,12,117000,44,298
-299/Illés Hunor/1998-10-09/2,299/Varga Csilla/1979-07-19/6,Pécs Budai vám 7,90000,9,94000,46,299
-300/Török Csongor/1995-03-26/1,300/Kiss Olívia/1984-11-02/5,Budapest Margit körút 55,155000,12,164000,41,300
+1/Kovács Lajos/1991-03-12/2,1/Nagy Tamás/1975-06-22/4,Budapest Fő utca 12,85000,12,42,90000,1
+2/Szabó Máté/1994-11-03/1,2/Tóth András/1980-01-14/3,Győr Szent Imre út 4,120000,6,55,150000,2
+3/Tamás Áron/1988-07-19/3,3/Farkas Bálint/1972-12-03/7,Pécs Kossuth tér 9,78000,10,38,80000,3
+4/Kiss Gergely/1990-02-28/1,4/Horváth László/1979-04-18/6,Szeged Rákóczi út 15,95000,8,47,100000,4
+5/Varga Dénes/1996-09-10/2,5/Székely Zoltán/1982-07-30/5,Debrecen Arany János u. 2,110000,12,52,120000,5
+6/Németh Levente/1998-05-21/1,6/Lakatos Péter/1971-08-09/3,Nyíregyháza Bethlen Gábor u. 33,70000,5,35,60000,6
+7/Balogh Krisztián/1993-12-11/4,7/Molnár Sándor/1987-03-16/8,Szolnok Tisza-part 7,99000,9,44,95000,7
+8/Szűcs Bence/1989-04-01/2,8/Fülöp József/1977-10-27/4,Sopron Várkerület 101,130000,11,60,140000,8
+9/Bíró Andor/1997-01-15/1,9/Kelemen Gábor/1969-02-07/2,Kaposvár Fő tér 22,87000,7,41,88000,9
+10/Fazekas Botond/1992-08-25/3,10/Takács Roland/1985-05-19/9,Tatabánya Gál István ltp. 707,90000,12,60,10000,10
+11/Csorba Milán/1995-09-13/2,11/Marton Tibor/1976-11-28/6,Budapest Bartók Béla út 88,140000,12,65,150000,11
+12/Kurucz Patrik/1987-05-08/1,12/Vas Dániel/1983-03-22/3,Debrecen Piac utca 44,75000,4,33,70000,12
+13/Kalmár Dóra/1999-07-24/2,13/Gulyás Edit/1974-09-02/4,Pécs Király utca 3,89000,6,45,92000,13
+14/Beke Tímea/1990-10-29/1,14/Nemesi Katalin/1981-12-18/5,Szeged Dóm tér 1,115000,10,58,120000,14
+15/Illés Noémi/1986-04-17/3,15/Márton Eszter/1978-08-13/7,Győr Baross út 6,98000,8,48,100000,15
+16/Simon Janka/1994-11-08/2,16/Deák Borbála/1986-02-24/4,Sopron Erzsébet utca 71,105000,12,54,110000,16
+17/Oláh Melinda/1991-01-03/1,17/Kádár Henrietta/1973-06-04/2,Kecskemét Rákóczi út 10,76000,5,36,75000,17
+18/Tar Dóra/1997-03-27/2,18/Horváth Lili/1984-07-29/5,Békéscsaba Kazinczy u. 11,82000,7,40,83000,18
+19/Bartha Júlia/1989-12-22/3,19/Fekete Ágnes/1970-01-31/8,Szekszárd Csokonai u. 4,93000,9,49,95000,19
+20/Lantos Emese/1993-06-14/1,20/Szűcs Mária/1975-05-06/3,Eger Dobó tér 5,102000,12,53,110000,20
+21/Balogh Lili/1995-02-11/2,21/Balogh János/1978-01-15/6,Budapest Vámház körút 3,130000,12,59,140000,21
+22/Szabó Réka/1992-09-09/1,22/Németh Zsuzsa/1982-03-19/4,Pécs Fő utca 18,78000,6,39,80000,22
+23/Makai Orsolya/1998-04-28/2,23/Kiss Emília/1976-07-12/5,Szeged Kárász utca 27,112000,10,57,120000,23
+24/Gyimesi Anna/1987-06-16/1,24/Takács Enikő/1974-09-23/3,Győr Árpád út 1,88000,7,43,90000,24
+25/Rácz Norbert/1994-01-29/2,25/Károlyi Kristóf/1983-02-01/4,Sopron Lackner Kristóf u. 14,101000,12,51,105000,25
+26/Kocsis Ádám/1996-03-02/1,26/Major Gergő/1979-06-21/6,Nyíregyháza Síp utca 3,74000,5,34,70000,26
+27/Török János/1988-10-08/3,27/Bognár László/1968-11-04/7,Eger Kossuth utca 2,92000,9,50,95000,27
+28/Fekete Pál/1990-12-13/2,28/Kis Valentin/1981-05-13/5,Pápa Esterházy út 6,87000,8,42,88000,28
+29/Vajda Gábor/1993-05-22/1,29/Bíró Balázs/1977-09-29/4,Kaposvár Ady Endre u. 11,99000,12,56,110000,29
+30/Novák Milán/1998-02-17/2,30/Juhász Kornél/1985-01-06/6,Debrecen Böszörményi út 88,113000,7,48,115000,30
+31/Kelemen Kristóf/1995-07-19/2,31/Szatmári Dénes/1972-08-18/5,Szeged Petőfi Sándor sgt. 12,87000,8,44,88000,31
+32/Deme Ákos/1991-03-08/3,32/Antal Marcell/1980-09-14/6,Budapest Rákóczi út 70,135000,12,60,140000,32
+33/Orsós Richárd/1997-02-10/1,33/Pintér Gábor/1969-03-19/2,Pécs Rókus utca 41,76000,6,37,78000,33
+34/Homola Zsolt/1989-11-22/2,34/Boros Sándor/1978-10-12/4,Debrecen Hatvan utca 13,90000,10,46,95000,34
+35/Zentai Bence/1996-06-05/3,35/Cseh Dóra/1975-12-28/5,Győr Mester utca 9,120000,12,59,125000,35
+36/Sztojka Adrián/1990-05-15/1,36/Siklósi Kitti/1983-08-04/3,Szeged Tavasz utca 2,67000,4,32,60000,36
+37/Veres Botond/1994-09-27/2,37/Fábián József/1971-07-01/5,Kaposvár Anna utca 14,82000,6,40,85000,37
+38/Somogyi Dániel/1988-04-12/2,38/Vida Noémi/1982-11-17/6,Budapest Lehel út 5,145000,12,63,150000,38
+39/Lukács Mirkó/1993-01-13/1,39/Szűcs Klára/1977-04-21/4,Sopron Mátyás király u. 10,94000,8,47,98000,39
+40/Kozma Patrik/1998-08-30/2,40/Szita Mária/1974-01-05/3,Debrecen Varga u. 23,78000,6,41,82000,40
+41/Görög Nándor/1991-10-09/3,41/Tüske Attila/1986-03-22/6,Szeged Kálvária sugárút 88,110000,10,55,115000,41
+42/Gelányi András/1997-05-19/1,42/Nyírő Edit/1970-07-31/7,Pécs Somogyi Béla út 2,98000,9,49,99000,42
+43/Kaposi Márk/1989-06-14/2,43/Visy Anikó/1981-02-02/4,Nyíregyháza Örökösföld 11,80000,7,42,83000,43
+44/Koszti Sándor/1996-01-11/3,44/Orosz Kitti/1983-10-29/6,Budapest Haller utca 22,132000,12,61,140000,44
+45/Horváth Olivér/1990-03-17/1,45/Tóth Diána/1979-11-26/3,Győr Mártírok u. 5,77000,5,38,80000,45
+46/Lendvai Kornél/1995-12-15/2,46/Bereg Tamás/1984-09-06/4,Szeged Tápai utca 3,84000,6,41,87000,46
+47/Tánczos Dénes/1987-01-24/3,47/Fitos Emese/1976-08-03/6,Sopron Deák tér 7,120000,12,58,125000,47
+48/Békési Nimród/1993-04-03/1,48/Somlai Ákos/1970-10-12/7,Debrecen Kassai út 91,90000,10,45,92000,48
+49/Fitos Zalán/1998-07-18/2,49/Horváth Zita/1982-01-22/4,Győr Teleki u. 31,78000,7,40,82000,49
+50/Móricz Tamás/1992-05-09/1,50/Németh Veronika/1975-05-19/3,Kaposvár Cseri út 18,74000,6,39,76000,50
+51/Harsányi Zsolt/1996-03-11/3,51/Tamási Luca/1987-04-07/5,Budapest Sas utca 1,150000,12,66,160000,51
+52/Bozsó Kristóf/1991-07-27/2,52/Benke Gabriella/1981-09-09/6,Pécs Ferencesek utcája 2,87000,8,44,91000,52
+53/Balogh Kevin/1994-11-10/1,53/Makai Dóra/1978-03-03/4,Szeged Dugonics tér 8,110000,10,56,118000,53
+54/Tornyai Marcell/1988-12-20/2,54/Ódor Piroska/1980-06-16/5,Győr Áchim András u. 5,78000,7,40,80000,54
+55/Szekeres Dániel/1997-01-17/3,55/Tiszai Noémi/1984-03-12/5,Debrecen Veres Péter u. 13,99000,9,47,102000,55
+56/Katona Gábor/1989-02-14/2,56/Batta Zoltán/1972-07-10/8,Szeged Kolozsvári tér 1,89000,6,42,91000,56
+57/Barna Márk/1995-08-23/1,57/Molnár Adél/1985-01-27/4,Sopron Kuruc dűlő 22,93000,8,48,95000,57
+58/Rónai Balázs/1987-05-29/2,58/Fodor Tamara/1979-02-14/4,Pécs Testvérvárosok tere 14,105000,12,53,110000,58
+59/Kulcsár Soma/1993-09-02/3,59/Sarkadi Kamilla/1986-04-06/7,Szolnok Baross út 15,90000,7,46,93000,59
+60/Korpási Áron/1996-06-18/1,60/Kurucz Máté/1975-08-01/3,Budapest Szépvölgyi út 102,140000,12,64,150000,60
+61/Benkő Erik/1988-01-30/2,61/Fehér Dóra/1977-03-13/4,Győr Kodály Zoltán u. 3,77000,6,38,80000,61
+62/Marton Vince/1994-10-19/1,62/László Fruzsina/1982-10-24/5,Szeged Madách u. 8,85000,8,41,88000,62
+63/Pálfi Bence/1997-12-27/2,63/Deme Ágnes/1974-12-05/6,Pécs Nagy Jenő u. 13,96000,9,49,98000,63
+64/Kárpáti Zsolt/1989-08-07/3,64/Antal Gyöngyi/1970-06-18/7,Sopron Béke út 5,112000,10,57,118000,64
+65/Máté Nándor/1993-02-11/1,65/Kristóf Szilvia/1983-04-26/4,Eger Lajos u. 66,88000,7,43,90000,65
+66/Gyetvai Zalán/1991-09-16/2,66/Barcsai Levente/1978-07-03/6,Budapest Fehérvári út 120,135000,12,62,140000,66
+67/Kósa Martin/1996-04-05/3,67/Fejér Noémi/1981-09-29/4,Győr Zrínyi u. 14,77000,5,37,80000,67
+68/Pintér Marcell/1988-03-01/1,68/Botos Veronika/1979-11-22/3,Pécs Tímár utca 19,82000,7,40,85000,68
+69/Finta Dániel/1995-12-03/2,69/Horváth Boróka/1984-01-19/5,Szeged Oroszlán utca 3,98000,10,48,100000,69
+70/Lakatos Kevin/1990-07-14/1,70/Gáborfi Sándor/1977-08-28/4,Kecskemét Károlyi u. 7,74000,6,38,76000,70
+71/Nagy Roland/1994-03-05/3,71/Kállai Éva/1976-09-25/5,Pécs Ágoston tér 4,89000,8,44,92000,71
+72/Bartal Zénó/1997-01-09/2,72/Orbán Levente/1980-03-12/6,Budapest Akácfa utca 88,145000,12,63,150000,72
+73/Bőhm Balázs/1989-11-30/3,73/Bede Nikolett/1972-12-09/7,Győr Bécsi kapu tér 3,86000,8,41,88000,73
+74/Kispál Soma/1996-05-26/1,74/Szölősi Ivett/1983-06-17/3,Szeged Móra park 2,94000,9,47,96000,74
+75/Törtei Bence/1993-07-13/2,75/Merényi Zoltán/1978-03-07/6,Pécs Felsővámház utca 19,102000,11,53,105000,75
+76/Sinkó Martin/1991-04-12/1,76/Jenei Dániel/1980-01-30/4,Sopron József Attila u. 12,90000,8,45,95000,76
+77/Farkas Ákos/1998-03-21/3,77/Tolnai Mária/1975-02-18/5,Nyíregyháza Hunyadi u. 23,78000,6,39,80000,77
+78/Balogh Benjámin/1990-06-03/2,78/Horváth Dalma/1984-04-27/6,Budapest Thököly út 15,130000,12,58,138000,78
+79/Tőkés Attila/1995-11-19/1,79/Németh Brigitta/1970-10-02/7,Szeged Körtöltés utca 12,86000,8,43,90000,79
+80/Téglás Mirkó/1997-09-25/2,80/Pálfi Judit/1982-07-14/4,Győr Bácsai út 44,79000,6,40,82000,80
+81/Kása László/1988-12-06/3,81/Veress Tímea/1977-01-28/4,Sopron Várkerület 3,112000,11,56,118000,81
+82/Bartos Vince/1996-02-17/1,82/Mezei Noémi/1974-03-21/5,Győr Lajta út 23,90000,9,48,92000,82
+83/Till Attila/1992-01-27/2,83/Szöllősi Mira/1985-05-16/6,Pécs Rácvárosi út 5,87000,7,42,90000,83
+84/Simon Nátán/1993-10-14/3,84/Kertész Ágnes/1981-09-12/4,Eger Mátyás király u. 3,78000,6,38,80000,84
+85/Tamási Boldizsár/1987-03-03/2,85/Gombos Dorina/1979-11-29/5,Kaposvár Fő u. 13,92000,8,45,95000,85
+86/Kadlicsek Ádám/1995-08-22/1,86/Fábián Annamária/1976-04-04/3,Szeged Ságvári tér 2,81000,7,41,83000,86
+87/Tamás Ottó/1991-05-09/3,87/Komáromi Kinga/1978-02-11/6,Pécs Basamalom utca 12,89000,9,46,91000,87
+88/Lőrincz Miklós/1996-12-18/2,88/Kopasz Mónika/1983-08-23/4,Győr Vág utca 9,84000,6,39,87000,88
+89/Kása Olivér/1998-04-07/1,89/Gombkötő Imre/1972-02-07/8,Budapest Üllői út 233,142000,12,65,150000,89
+90/Tanka Zsolt/1993-09-16/2,90/Somi Judit/1980-07-05/4,Szeged Mars tér 4,87000,8,43,90000,90
+91/Tornai Soma/1995-01-06/3,91/Kovács Viola/1984-05-21/5,Pécs Szigeti út 77,96000,10,48,100000,91
+92/Hécz Benedek/1990-11-11/1,92/Pataki Diána/1976-10-25/3,Győr Móricz Zsigmond u. 5,78000,6,38,80000,92
+93/Vida Csaba/1991-02-08/3,93/Kürtösi Anna/1970-12-12/8,Sopron Virágvölgy u. 3,108000,11,55,112000,93
+94/Marjai Balázs/1997-07-30/2,94/Serfőző Fatime/1981-03-14/4,Kaposvár Donner u. 22,84000,7,40,86000,94
+95/Balogh Gellért/1988-06-26/1,95/Péterfi Éva/1979-09-20/4,Szeged Érsek utca 15,90000,9,47,95000,95
+96/Szita Gergely/1994-12-21/2,96/Vas Nóra/1984-03-18/6,Pécs Surányi út 11,83000,6,41,85000,96
+97/Virág Zsolt/1995-03-31/3,97/Kárpáti Ilona/1975-05-19/5,Győr Reviczky u. 2,97000,8,50,100000,97
+98/Kulman Ákos/1992-10-07/1,98/Füleki Rebeka/1983-11-27/4,Budapest Bartók Béla út 21,138000,12,62,145000,98
+99/Lukács Elemér/1996-01-19/2,99/Bánfi Noémi/1980-02-14/6,Szeged Hódmezővásárhelyi út 5,90000,9,46,93000,99
+100/Nemes Patrik/1993-05-25/1,100/Lőrincz András/1978-08-30/4,Kaposvár Füredi út 19,78000,6,38,80000,100
+101/Szabados Máté/1991-07-19/2,101/Szederkényi Tímea/1979-01-13/4,Sopron Hársfa út 3,92000,8,45,95000,101
+102/Csibi Ákos/1997-03-17/1,102/Barabás Sarolta/1984-04-15/5,Pécs Aradi vértanúk útja 17,86000,7,42,88000,102
+103/Bujdosó Levente/1989-11-03/3,103/Fridrich Kitti/1976-02-28/6,Győr Virág út 19,102000,10,52,105000,103
+104/Székely Sándor/1996-01-11/2,104/Tornyai András/1981-05-24/4,Kaposvár Béla király utca 9,84000,6,40,86000,104
+105/Kertész Zalán/1993-02-26/3,105/Tóth Dénes/1974-09-10/7,Budapest Kossuth Lajos utca 3,145000,12,63,150000,105
+106/Madarász Botond/1991-04-21/1,106/Berkes Tünde/1983-03-30/4,Szeged Vasas Sándor u. 12,89000,8,47,92000,106
+107/Illés Marcell/1987-12-17/2,107/Rátkai Levente/1970-06-16/8,Debrecen Egyetem tér 1,78000,6,38,80000,107
+108/Németh Csaba/1995-10-08/3,108/Komjáti Erika/1982-01-18/5,Pécs Nagy Lajos király útja 44,85000,7,41,87000,108
+109/Keszthelyi Soma/1998-06-28/1,109/Sinka Tamás/1978-10-05/4,Sopron Zsilip utca 11,91000,9,46,94000,109
+110/Kosa Márton/1992-03-09/2,110/Szloboda Dorina/1980-02-26/5,Győr Búza utca 88,77000,6,39,80000,110
+111/Tarján Ádám/1994-08-19/3,111/Keresztes Zsolt/1972-04-07/6,Kaposvár Hársfa u. 5,86000,7,42,90000,111
+112/Farkas Róbert/1989-05-16/1,112/Komlósi Fanni/1977-03-19/3,Budapest Alkotmány utca 4,132000,12,62,140000,112
+113/Deák Dániel/1996-09-22/2,113/Demeter Márta/1983-07-13/6,Pécs Jurisics Miklós utca 15,78000,7,38,80000,113
+114/Vida Balázs/1991-01-04/3,114/Németh Renáta/1981-12-08/4,Debrecen Simonffy utca 18,90000,8,45,94000,114
+115/Szűcs Nándor/1997-02-27/1,115/Máté Brigitta/1974-01-29/5,Szeged Felső Tisza-part 3,112000,10,54,115000,115
+116/Kovács István/1993-08-14/2,116/Szabó Andrea/1985-03-17/6,Pécs Jókai tér 11,88000,7,43,90000,116
+117/Sarkadi Soma/1989-04-25/3,117/Fóti Lilla/1979-05-09/4,Győr Hédervári út 6,82000,6,41,85000,117
+118/Szenes Ákos/1996-11-05/1,118/Barcza Melinda/1982-11-22/6,Kaposvár Virág utca 33,78000,5,37,80000,118
+119/Romhányi Csanád/1992-02-18/2,119/Mikola Magdolna/1976-01-16/3,Budapest Tímár u. 23,140000,12,63,145000,119
+120/Kerekes Zalán/1995-12-13/3,120/Veres Rebeka/1984-09-14/5,Szeged Attila utca 41,99000,9,48,102000,120
+121/Kaposi Márton/1993-04-12/1,121/Barati Sára/1979-03-21/5,Pécs Magyar utca 22,85000,7,42,88000,121
+122/Várkonyi Erik/1997-01-08/2,122/Szederkényi Klára/1980-10-19/6,Győr Dózsa György rakpart 5,78000,6,39,81000,122
+123/Szöllősi Márton/1989-08-21/3,123/Földesi Tibor/1974-11-16/7,Kaposvár Köztársaság út 4,92000,9,47,95000,123
+124/Kardos Bálint/1991-06-03/2,124/Lukácsi Nóra/1982-02-01/5,Szeged Rókusi körút 99,88000,8,44,90000,124
+125/Demeter Dávid/1996-05-27/1,125/Balogh Hajnalka/1985-06-14/4,Budapest Váci út 33,144000,12,64,150000,125
+126/Tompa Ákos/1998-03-19/2,126/Fekete Gabriella/1977-12-30/6,Pécs Engel János u. 10,85000,7,40,87000,126
+127/Fehér Roland/1994-11-30/1,127/László Dominika/1981-07-02/5,Kaposvár Mező u. 12,76000,6,38,78000,127
+128/Szántó Milán/1988-09-16/3,128/Kurucz Fruzsina/1973-09-05/7,Szeged Alsókikötő sor 22,92000,9,48,93000,128
+129/Berkes Dániel/1990-12-02/2,129/Móré Ádám/1980-05-12/3,Pécs Rét utca 8,83000,6,42,85000,129
+130/Kapczár Kristóf/1995-02-09/1,130/Ádám Katalin/1979-08-24/4,Győr Puskás Tivadar u. 4,98000,8,49,100000,130
+131/Lukács Dávid/1993-10-28/2,131/Kertesi Bernadett/1984-03-11/6,Budapest Szentkirályi utca 15,130000,12,60,135000,131
+132/Bagdi Bence/1991-04-08/3,132/Sallai Tibor/1978-01-14/4,Szeged Pulz utca 9,86000,7,43,88000,132
+133/Naszvadi Soma/1996-06-29/1,133/Bagi Bettina/1983-12-03/5,Kaposvár Virág utca 55,77000,5,38,80000,133
+134/Makai Patrik/1987-09-20/2,134/Antalné Rácz Anna/1975-02-06/6,Pécs Sörház utca 3,91000,9,46,94000,134
+135/Szakács Marcell/1992-07-15/3,135/Medveczki Klára/1981-11-27/5,Budapest Lánchíd utca 7,140000,12,63,148000,135
+136/Végvári Tibor/1997-11-12/1,136/Elek Mónika/1974-04-13/8,Győr Eötvös park 2,82000,7,41,84000,136
+137/Köbli Ákos/1994-05-19/3,137/Kurucz Melinda/1977-09-04/6,Szeged Tisza Lajos körút 10,88000,8,45,91000,137
+138/Czifra Róbert/1990-01-26/1,138/Füzesi Lívia/1982-10-03/5,Pécs Megyeri út 22,80000,6,39,82000,138
+139/Fekete Ábel/1996-12-18/2,139/Horváth István/1979-06-29/4,Kaposvár Jutai út 19,84000,7,42,87000,139
+140/Szűcs Zsolt/1998-07-07/3,140/Horváth Tünde/1983-03-02/6,Budapest Bajcsy-Zsilinszky út 42,133000,12,61,140000,140
+141/Kristóf Ádám/1993-01-31/1,141/Fillér Júlia/1975-12-11/4,Győr Kazinczy Ferenc u. 7,88000,7,43,90000,141
+142/Kerekes Soma/1991-09-05/3,142/Németh Tamara/1984-07-21/6,Pécs Tímár u. 14,82000,6,41,85000,142
+143/Tarján Csaba/1989-06-21/2,143/Lantos Pálma/1972-11-10/7,Szeged Rókusi körút 121,95000,9,48,98000,143
+144/Fülöp Márk/1996-04-16/1,144/Demény Márton/1981-09-14/4,Kaposvár Petőfi tér 3,78000,5,37,80000,144
+145/Vadász László/1994-12-23/3,145/Solti Eszter/1978-06-07/6,Győr Újkapu u. 19,84000,7,42,87000,145
+146/Köteles Kevin/1991-02-26/1,146/Szalai Zsófia/1980-01-22/5,Budapest Soroksári út 55,148000,12,67,155000,146
+147/Rimóczi Nándor/1996-05-14/2,147/Lóczi Katalin/1983-04-18/4,Pécs Nagyárpád utca 2,90000,8,45,93000,147
+148/Kende Róbert/1989-03-07/3,148/Kapronczai Emese/1977-05-19/6,Szeged József Attila sugárút 33,83000,6,40,85000,148
+149/Andorka Soma/1997-08-29/1,149/Borbás Lili/1974-09-23/7,Kaposvár Dombóvári út 9,82000,6,41,85000,149
+150/Kunkli Zsolt/1993-09-20/2,150/Nagy Márta/1982-12-02/5,Győr Jankovich u. 5,96000,8,49,100000,150
+151/Kiss Zalán/1990-10-11/3,151/Komlós Áron/1971-08-14/8,Pécs Bajcsy-Zsilinszky utca 29,94000,9,47,97000,151
+152/Bede Balázs/1995-11-04/1,152/Makai Ibolya/1983-02-19/4,Szeged Szentháromság utca 11,85000,7,42,88000,152
+153/Pilinyi Kristóf/1987-07-13/2,153/Gencsi Júlia/1980-05-06/6,Győr Nagy Imre út 2,78000,6,38,80000,153
+154/Tasnádi Dénes/1992-08-25/3,154/Sárközi Edit/1978-11-12/5,Kaposvár Nádor u. 12,82000,7,41,85000,154
+155/Virág Martin/1994-01-15/1,155/Széplaki Sára/1981-03-22/4,Pécs Alkotmány utca 33,98000,10,49,102000,155
+156/Bartók Mirkó/1989-09-29/2,156/Szatmári Dóra/1975-07-14/6,Szeged Retek u. 22,88000,8,45,91000,156
+157/Antal Soma/1997-11-20/3,157/Gyenes Márton/1982-10-11/4,Győr Papi Lajos u. 5,82000,6,40,85000,157
+158/Köteles Dávid/1991-06-30/1,158/Tóth Enikő/1979-01-08/5,Budapest Pozsonyi út 12,138000,12,62,145000,158
+159/Szabó Nándor/1996-03-11/2,159/Fehér Janka/1974-08-16/7,Pécs Nagy Lajos király u. 2,80000,6,40,83000,159
+160/Farkas Márk/1993-07-07/3,160/Sinkó Tímea/1980-12-28/6,Szeged Szentháromság u. 23,90000,9,46,93000,160
+161/Kurucz Erik/1990-02-05/1,161/Balogh Szilvia/1977-03-17/4,Győr Radnóti u. 15,78000,6,38,80000,161
+162/Somlai Roland/1995-10-12/2,162/Kalocsai Diána/1983-09-24/6,Kaposvár Noszlopy Gáspár utca 4,86000,7,43,88000,162
+163/Bagó Tamás/1988-01-10/3,163/Nyerges Blanka/1970-04-13/8,Budapest Fővám tér 1,150000,12,67,160000,163
+164/Szentkirályi Máté/1996-06-18/1,164/Tánczos Edit/1984-05-21/5,Szeged Ortutay utca 3,90000,9,47,93000,164
+165/Szántó Levente/1994-09-08/2,165/Varsányi Nóra/1978-10-27/6,Pécs Siklósi út 88,83000,7,42,85000,165
+166/Orbán Tamás/1993-05-14/3,166/Szalay Ágnes/1981-11-04/4,Győr Vámosszabadi út 11,82000,6,41,84000,166
+167/Sánta Richárd/1998-04-01/1,167/Kántor Dénes/1974-02-06/7,Kaposvár Vár utca 13,79000,6,40,82000,167
+168/Zentai Marcell/1991-07-22/2,168/Kulcsár Viktória/1982-05-08/5,Pécs Babits Mihály utca 7,88000,8,44,90000,168
+169/Kiss Gellért/1997-12-03/3,169/Oláh Márta/1976-06-24/3,Szeged Hóbiárt út 12,80000,5,38,82000,169
+170/Hoffer Balázs/1989-03-09/1,170/Kurdi Patrícia/1980-04-16/4,Győr Akadémia u. 15,84000,7,42,87000,170
+171/Szabadi Soma/1994-11-18/2,171/Kása Andrea/1983-12-29/6,Kaposvár Rákóczi tér 2,89000,8,45,92000,171
+172/Gyulai Márk/1992-09-21/3,172/Fenyvesi Irén/1977-01-14/4,Pécs Kertváros u. 1,83000,7,42,85000,172
+173/Bugyi Levente/1996-08-10/2,173/Gombos Melinda/1984-11-03/5,Szeged Kenderföld utca 8,90000,9,47,93000,173
+174/Nagy Kornél/1993-06-11/1,174/Tar Bernadett/1980-07-22/6,Győr Kõrösi út 3,78000,6,38,80000,174
+175/Horváth Csanád/1989-10-23/3,175/Tarján Márta/1974-10-02/7,Budapest Bimbó út 97,148000,12,67,155000,175
+176/Ladányi András/1995-02-15/2,176/Fülöp Ágota/1979-09-27/5,Kaposvár Hársfa u. 88,86000,7,43,88000,176
+177/Csernátony Márk/1998-03-11/1,177/Mayer Edit/1982-03-03/4,Szeged Holló utca 7,78000,6,39,81000,177
+178/Ács Dominik/1990-06-09/3,178/Sebestyén Adél/1978-01-18/6,Pécs Zsolnay Vilmos u. 14,84000,7,42,86000,178
+179/Zsembinszki Soma/1994-12-14/2,179/Molnár Piroska/1981-10-09/5,Győr Liget u. 19,90000,9,47,93000,179
+180/Tálosi Ádám/1991-04-17/1,180/Bácskai Lilla/1984-02-16/4,Budapest Nagyvárad tér 1,140000,12,63,148000,180
+181/Erdei Máté/1996-09-28/3,181/Tálosi Viktória/1975-06-03/6,Szeged Eperfa u. 2,86000,7,43,88000,181
+182/Kelemen Kevin/1993-03-22/2,182/Széles Diána/1980-08-24/4,Pécs Köztársaság tér 12,78000,6,38,80000,182
+183/Demény Márk/1989-01-16/1,183/Farkas Melinda/1977-05-18/6,Győr Pacsirta u. 22,82000,7,41,85000,183
+184/Polgári Zalán/1998-07-07/2,184/Balogh Nóra/1983-11-07/5,Kaposvár Béla király u. 4,88000,8,44,90000,184
+185/Szamosi Bence/1995-05-29/1,185/Kondor Fanni/1978-04-11/3,Szeged Gyík utca 5,80000,5,38,82000,185
+186/Huszár Dániel/1991-11-13/3,186/Marosi Kinga/1970-09-22/7,Budapest Római part 8,148000,12,68,155000,186
+187/Biró Gábor/1988-04-03/2,187/Árkosi Eszter/1974-05-15/6,Pécs Diadal utca 7,83000,6,42,85000,187
+188/Dávid Zalán/1997-01-30/1,188/Kozma Adél/1981-10-29/5,Győr Révai Miklós utca 1,79000,6,39,81000,188
+189/Fodor Ákos/1993-10-22/3,189/Laki Viola/1979-03-30/4,Szeged Hegedűs u. 22,87000,7,44,90000,189
+190/Salánki Márk/1996-12-04/2,190/Tarcsay Erzsébet/1977-11-19/6,Kaposvár Füredi út 44,84000,6,41,86000,190
+191/Mózes Tamás/1990-02-12/3,191/Kecskeméti Ágnes/1975-12-26/5,Pécs Tettye u. 3,90000,9,47,93000,191
+192/Seres Dániel/1994-08-25/1,192/Duna Gabriella/1983-03-08/4,Szeged Víztorony tér 2,82000,6,40,85000,192
+193/Toldi Soma/1991-01-05/2,193/Tamás Luca/1980-07-12/5,Budapest József körút 88,138000,12,62,145000,193
+194/Sipos Mirkó/1997-06-13/3,194/Horváth Gitta/1974-08-09/6,Kaposvár Zárda u. 2,80000,6,39,83000,194
+195/Kiss Balázs/1989-11-29/1,195/Fazekas Helga/1982-01-22/4,Pécs Mór utca 17,90000,8,46,93000,195
+196/Nagy Soma/1994-04-18/2,196/Mezősi Tímea/1979-11-01/6,Szeged Hunyadi tér 1,87000,7,44,90000,196
+197/Balogh Kristóf/1991-09-02/3,197/Majláth Attila/1977-02-08/5,Budapest Allee környéke 19,146000,12,66,152000,197
+198/Farkas Kevin/1996-07-15/1,198/Orosz Gerda/1980-03-14/4,Győr Szigethy Attila út 18,80000,6,40,83000,198
+199/Tényai Márk/1993-03-05/2,199/Szabó Flóra/1982-02-26/6,Pécs Ágoston tér 11,82000,6,41,85000,199
+200/Keszi Tamás/1987-02-27/3,200/Borbély Anita/1974-06-04/7,Kaposvár Jókai utca 8,89000,7,45,92000,200
+201/Balla Dominik/1992-04-18/2,201/Simon Eszter/1981-07-09/5,Budapest Dohány utca 33,136000,12,44,145000,201
+202/Gál Vince/1995-10-22/1,202/Papp Nikolett/1979-03-27/4,Debrecen Szent Anna utca 12,88000,9,46,92000,202
+203/Kiss Botond/1988-01-07/3,203/Mészáros Zoltán/1976-11-30/6,Pécs Jókai tér 8,95000,10,49,99000,203
+204/Nagy Csanád/1994-08-14/2,204/Török Réka/1983-05-05/5,Szeged Tisza Lajos krt. 78,108000,12,42,115000,204
+205/Székely Márk/1997-03-19/1,205/Fekete Gábor/1974-09-16/7,Győr Rába Quelle tér 3,92000,8,51,96000,205
+206/Váradi Noel/1990-12-04/2,206/Horváth Tünde/1980-02-28/4,Sopron Széchenyi tér 11,114000,11,45,120000,206
+207/Pál Richárd/1993-06-30/3,207/Kovács Imre/1977-10-13/6,Budapest Podmaniczky utca 45,142000,12,48,150000,207
+208/Lakatos Zalán/1996-09-11/1,208/Szabó Diána/1985-04-22/5,Debrecen Faraktár utca 19,79000,7,40,82000,208
+209/Farkas Kolos/1989-05-27/2,209/Németh Attila/1972-08-03/8,Pécs Megye utca 5,89000,9,53,93000,209
+210/Tóth Ábel/1995-02-15/1,210/Balogh Kinga/1982-12-07/4,Szeged Gogol utca 22,97000,10,43,102000,210
+211/Molnár Erik/1991-11-09/3,211/Varga László/1978-06-18/6,Győr Aradi vértanúk útja 33,105000,12,47,110000,211
+212/Simon Nimród/1998-07-23/2,212/Kiss Bernadett/1975-01-29/5,Budapest Erzsébet krt. 12,148000,12,50,155000,212
+213/Orsós Kevin/1994-03-06/1,213/Takács Ferenc/1980-09-14/4,Sopron Lackner Kristóf u. 55,109000,11,45,115000,213
+214/Horváth Alex/1987-08-31/2,214/Fodor Petra/1979-04-11/6,Pécs Bajcsy-Zsilinszky utca 7,93000,8,46,97000,214
+215/Varga Hunor/1993-12-17/3,215/Pintér Szilvia/1976-07-25/5,Debrecen Csapó utca 40,86000,9,49,90000,215
+216/Németh Olivér/1996-05-02/1,216/Juhász Márton/1983-10-08/4,Szeged Boldogasszony sgt. 15,101000,12,42,108000,216
+217/Kovács Benett/1990-01-26/2,217/Szűcs Anita/1974-03-19/7,Budapest Rákóczi út 88,140000,12,51,148000,217
+218/Szabó Levente/1995-09-13/1,218/Magyar Katalin/1981-11-05/5,Győr Bajcsy-Zsilinszky út 21,99000,10,44,104000,218
+219/Balogh Milán/1988-04-29/3,219/Fehér István/1977-02-14/6,Pécs Rákóczi út 44,91000,8,48,95000,219
+220/Takács Zente/1997-07-08/2,220/Győrffy Zsófia/1985-06-27/4,Szeged Londoni krt. 3,106000,11,40,112000,220
+221/Fekete Dominik/1992-10-21/1,221/Kiss Tamás/1970-12-03/8,Budapest Wesselényi utca 19,135000,12,55,142000,221
+222/Papp Zente/1994-02-05/2,222/Nagy Emese/1982-08-17/5,Debrecen Bethlen utca 9,84000,7,43,88000,222
+223/Mészáros Noel/1989-11-18/3,223/Tóth Zsolt/1978-05-30/6,Sopron Ógabona tér 4,117000,12,47,124000,223
+224/Katona Áron/1996-03-27/1,224/Szalai Viktória/1975-09-08/5,Pécs Irgalmasok utcája 12,88000,9,50,92000,224
+225/Gulyás Márk/1991-07-14/2,225/Barta László/1980-01-22/4,Budapest Király utca 101,152000,12,45,160000,225
+226/Illés Botond/1998-12-01/1,226/Kovács Judit/1984-04-15/6,Szeged Stefánia 7,99000,10,41,105000,226
+227/Seres Csongor/1993-05-20/3,227/Horváth Gergely/1976-10-29/7,Győr Szigethy Attila út 15,96000,8,49,100000,227
+228/Török Mirkó/1990-08-09/2,228/Farkas Ramóna/1979-03-04/5,Debrecen Klauzál utca 5,81000,7,46,85000,228
+229/Szűcs Ákos/1995-01-31/1,229/Németh Dávid/1983-07-18/4,Budapest József krt. 55,138000,12,42,146000,229
+230/László Benedek/1997-06-25/2,230/Varga Lilla/1974-11-12/6,Pécs Mária utca 33,94000,11,51,99000,230
+231/Fodor Zalán/1988-09-04/3,231/Szabó András/1981-02-26/5,Szeged Alsó kikötő sor 9,103000,12,44,110000,231
+232/Kiss Nimród/1994-04-11/1,232/Balogh Erika/1977-08-07/7,Győr Radnóti utca 22,101000,9,48,106000,232
+233/Nagy Kevin/1996-10-16/2,233/Tóth Mónika/1985-05-19/4,Budapest Kazinczy utca 41,144000,12,40,152000,233
+234/Varga Patrik/1991-03-08/1,234/Papp Csaba/1972-12-21/8,Sopron Templom utca 8,112000,10,53,118000,234
+235/Horváth Csanád/1998-07-30/2,235/Kovács Orsolya/1980-06-14/5,Debrecen Simonyi út 17,87000,8,45,91000,235
+236/Szabó Hunor/1993-11-23/3,236/Fekete Zoltán/1978-09-27/6,Pécs Dischka Győző utca 3,90000,9,47,94000,236
+237/Molnár Alex/1989-02-19/1,237/Nagy Vivien/1983-01-05/4,Szeged Roosevelt tér 5,109000,12,42,116000,237
+238/Pintér Zente/1995-05-07/2,238/Takács Róbert/1975-10-18/7,Budapest Akácfa utca 33,149000,12,50,157000,238
+239/Tóth Noel/1997-09-28/1,239/Simon Patrícia/1982-04-03/5,Győr Munkácsy Mihály utca 11,98000,10,43,103000,239
+240/Kovács Kolos/1990-12-12/3,240/Horváth Bence/1979-07-26/6,Pécs Alkotmány utca 19,92000,8,46,96000,240
+241/Farkas Ábel/1994-08-03/2,241/Varga Klaudia/1984-11-09/4,Debrecen Darabos utca 6,83000,7,41,87000,241
+242/Németh Erik/1996-01-17/1,242/Szabó György/1976-03-22/8,Budapest Klauzál tér 9,141000,12,49,149000,242
+243/Balogh Benett/1992-06-05/2,243/Kiss Dorina/1981-09-15/5,Sopron Előkapu 4,108000,11,44,114000,243
+244/Takács Olivér/1988-10-29/3,244/Fodor Mátyás/1970-05-08/7,Pécs Kálvária utca 12,89000,9,55,93000,244
+245/Simon Zente/1995-04-14/1,245/Nagy Eszter/1983-02-27/4,Szeged Takarék utca 3,104000,12,42,111000,245
+246/Papp Hunor/1997-11-20/2,246/Tóth Kitti/1978-08-11/6,Debrecen Egyetem sugárút 55,95000,10,47,100000,246
+247/Mészáros Csongor/1991-03-03/1,247/Kovács Sándor/1975-12-04/5,Budapest Teréz krt. 41,153000,12,50,162000,247
+248/Katona Ákos/1998-07-27/3,248/Balázs Réka/1980-04-18/6,Győr Baross Gábor út 33,102000,9,45,107000,248
+249/Gulyás Mirkó/1993-10-10/2,249/Szalai István/1985-06-30/4,Pécs Zsolnay Vilmos út 77,97000,11,40,102000,249
+250/Seres Benedek/1996-02-24/1,250/Fehér Luca/1977-01-13/7,Szeged Jósika utca 5,99000,8,48,104000,250
+251/Illés Zalán/1990-09-08/2,251/Juhász Noémi/1982-10-26/5,Budapest Váci utca 82,158000,12,43,168000,251
+252/Török Csanád/1994-05-19/3,252/Németh Ádám/1974-07-07/6,Debrecen Péterfia utca 44,88000,9,51,92000,252
+253/Szűcs Noel/1997-12-15/1,253/Varga Zsófia/1981-03-29/4,Sopron Frankel Leó utca 11,113000,12,44,119000,253
+254/Lakatos Kolos/1992-08-02/2,254/Kiss Levente/1979-11-17/7,Pécs Ifjúság útja 6,91000,10,46,96000,254
+255/Fodor Ábel/1995-01-28/1,255/Horváth Panna/1984-05-04/5,Budapest Március 15. tér 8,147000,12,41,155000,255
+256/Kovács Dominik/1989-06-13/3,256/Szabó Marcell/1976-09-21/6,Győr Szent István út 10,107000,11,49,113000,256
+257/Szabó Erik/1996-11-07/2,257/Tóth Boglárka/1983-02-15/4,Debrecen Füvészkert utca 19,85000,8,42,89000,257
+258/Nagy Benett/1991-04-22/1,258/Farkas Gábor/1970-08-08/8,Pécs Hungária utca 33,93000,9,55,97000,258
+259/Varga Zente/1998-09-06/2,259/Nagy Gréta/1980-12-20/5,Szeged Kelemen utca 12,106000,12,45,113000,259
+260/Horváth Hunor/1993-03-11/3,260/Balogh Tamás/1978-06-03/6,Budapest Corvin tér 5,143000,12,47,151000,260
+261/Molnár Alex/1995-07-25/1,261/Takács Lili/1985-10-17/4,Győr Tarcsay utca 3,99000,10,40,105000,261
+262/Pintér Olivér/1990-12-09/2,262/Simon Dániel/1975-04-01/7,Debrecen Kartács utca 22,82000,7,50,86000,262
+263/Tóth Csongor/1997-05-04/1,263/Kovács Fanni/1982-09-14/5,Pécs Endresz György út 9,96000,11,43,101000,263
+264/Kiss Noel/1994-10-18/3,264/Fodor Krisztina/1977-01-27/6,Sopron Várisi út 44,110000,12,48,116000,264
+265/Németh Ákos/1996-02-03/2,265/Varga Bence/1981-07-11/4,Budapest Blaha Lujza tér 6,150000,12,44,158000,265
+266/Balogh Kolos/1989-08-27/1,266/Szabó Veronika/1979-03-24/6,Szeged Bérpalota utca 1,101000,10,46,107000,266
+267/Takács Ábel/1995-11-12/2,267/Nagy Attila/1984-05-06/5,Győr Nádor utca 15,103000,9,41,108000,267
+268/Simon Dominik/1991-01-30/3,268/Horváth Lóránt/1976-11-19/7,Pécs Vasút utca 7,89000,8,49,93000,268
+269/Farkas Erik/1998-06-16/1,269/Tóth Szonja/1983-08-02/4,Debrecen Mester utca 33,86000,7,42,90000,269
+270/Papp Benett/1993-09-29/2,270/Kiss Mátyás/1974-12-15/8,Budapest Ferenciek tere 10,156000,12,51,165000,270
+271/Mészáros Zente/1996-04-05/1,271/Balogh Eszter/1980-02-08/5,Szeged Aradi vértanúk tere 4,108000,12,45,115000,271
+272/Katona Hunor/1990-07-21/3,272/Fehér Zoltán/1978-10-25/6,Győr Jókai utca 19,100000,10,47,105000,272
+273/Gulyás Csongor/1997-12-08/2,273/Juhász Petra/1985-04-12/4,Pécs Tüskésréti út 5,94000,11,40,99000,273
+274/Seres Noel/1992-05-14/1,274/Németh Csaba/1972-09-03/7,Budapest Astoria 3,145000,12,53,153000,274
+275/Illés Kolos/1995-10-27/2,275/Varga Dorka/1981-06-18/5,Debrecen Bayk András kert 11,84000,8,44,88000,275
+276/Török Ábel/1998-03-02/1,276/Kovács Bendegúz/1979-11-30/6,Sopron Ikva utca 7,115000,12,46,121000,276
+277/Szűcs Dominik/1994-08-19/3,277/Szabó Liliom/1984-01-14/4,Pécs Finn utca 22,91000,9,41,95000,277
+278/Lakatos Erik/1991-01-05/2,278/Takács Réka/1976-07-27/7,Budapest Kálvin tér 9,152000,12,49,160000,278
+279/Fodor Benett/1996-06-11/1,279/Horváth Zorka/1983-03-09/5,Győr Révai Miklós utca 15,106000,10,42,112000,279
+280/Kovács Zente/1989-11-26/2,280/Nagy Dominik/1975-05-22/6,Debrecen Hatvani István utca 4,87000,9,50,91000,280
+281/Szabó Hunor/1997-04-13/3,281/Balogh Jázmin/1980-09-06/4,Szeged Szentháromság utca 33,104000,12,45,111000,281
+282/Nagy Csongor/1993-09-28/1,282/Fekete Olivér/1978-12-19/7,Pécs Aidinger János út 8,95000,11,47,100000,282
+283/Varga Noel/1995-02-17/2,283/Tóth Blanka/1985-08-04/5,Budapest Deák Ferenc tér 5,159000,12,40,168000,283
+284/Horváth Kolos/1990-07-03/1,284/Kiss Zsombor/1977-02-17/6,Győr Árpád út 44,101000,10,48,107000,284
+285/Molnár Ábel/1998-12-20/3,285/Simon Nóra/1982-10-31/4,Debrecen Csemete utca 12,83000,8,43,87000,285
+286/Pintér Dominik/1994-05-07/2,286/Varga Gergely/1974-04-25/8,Pécs Makay István út 3,92000,9,51,96000,286
+287/Tóth Erik/1996-10-22/1,287/Németh Hanna/1981-06-08/5,Szeged Rerrich Béla tér 1,107000,12,44,114000,287
+288/Kiss Benett/1991-03-09/2,288/Balázs Patrik/1979-11-21/6,Budapest Oktogon 7,154000,12,46,163000,288
+289/Németh Zente/1997-08-25/1,289/Takács Eliza/1984-01-04/4,Győr Liszt Ferenc utca 28,104000,11,41,110000,289
+290/Balogh Hunor/1992-01-12/3,290/Horváth Csenge/1976-07-18/7,Debrecen Lehel utca 19,89000,10,49,94000,290
+291/Takács Csongor/1995-06-28/2,291/Szabó Milán/1983-09-02/5,Pécs Pavilon utca 6,93000,9,42,97000,291
+292/Simon Noel/1998-11-14/1,292/Kovács Lelle/1980-03-16/6,Budapest Andrássy út 60,165000,12,45,175000,292
+293/Farkas Kolos/1993-04-01/2,293/Nagy Botond/1975-12-29/7,Szeged Feketesas utca 11,99000,8,50,104000,293
+294/Papp Ábel/1996-09-17/3,294/Tóth Zalán/1982-05-13/4,Győr Batsányi János utca 5,98000,10,43,103000,294
+295/Mészáros Dominik/1990-02-04/1,295/Balogh Szofi/1978-08-26/6,Pécs Klimó György utca 9,94000,11,47,99000,295
+296/Katona Erik/1997-07-20/2,296/Fehér Nimród/1985-10-09/5,Debrecen Füredi kapu 2,86000,7,40,90000,296
+297/Gulyás Benett/1994-12-06/1,297/Juhász Lívia/1977-04-22/7,Budapest Nyugati tér 4,149000,12,48,157000,297
+298/Seres Zente/1991-05-23/3,298/Németh Konrád/1981-01-05/4,Sopron Csatkai Endre utca 33,111000,12,44,117000,298
+299/Illés Hunor/1998-10-09/2,299/Varga Csilla/1979-07-19/6,Pécs Budai vám 7,90000,9,46,94000,299
+300/Török Csongor/1995-03-26/1,300/Kiss Olívia/1984-11-02/5,Budapest Margit körút 55,155000,12,41,164000,300
