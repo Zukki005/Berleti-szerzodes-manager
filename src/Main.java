@@ -22,9 +22,7 @@ public class Main implements iEv, iHonap, iNap{
             System.out.println("6 - Legnagyobb négyzetméter");
             System.out.println("7 - Legkisebb négyzetméter");
             System.out.println("0 - Kilépés");
-            System.out.print("Választás: ");
-            valasztas = be.nextInt();
-            be.nextLine();
+            valasztas = Integer.parseInt(menuEllenorzo(be, "Választás: "));
 
             switch (valasztas) {
                 case 1:
@@ -167,10 +165,10 @@ public class Main implements iEv, iHonap, iNap{
         } catch (IOException e) { throw new RuntimeException(e); }
     }
 
-    public static Szerzodes keresAzon(int id, ArrayList<Szerzodes> szerzodesek) {
+    public static Object keresAzon(int id, ArrayList<Szerzodes> szerzodesek) {
         for (Szerzodes sz : szerzodesek)
             if (sz.getAzon() == id) return sz;
-        return null;
+        return "Nincs ilyen azonosító!";
     }
     public static Szerzodes legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek) {
         return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getBerletiDij));
@@ -201,11 +199,27 @@ public class Main implements iEv, iHonap, iNap{
     public static String bekerSzam(Scanner be, String uzenet) {
         while (true) {
             String input = bekerNemUres(be, uzenet);
-            if (input.matches("\\d+")) {
+            if (input.matches("\\d+") && Integer.parseInt(input) > 0) {
                 return input;
             } else {
                 System.out.println("Hibás adat! Csak számot adjon meg.");
             }
+        }
+    }
+
+    public static String menuEllenorzo(Scanner be, String uzenet) {
+        while (true) {
+            System.out.print(uzenet);
+            String input = be.nextLine().trim();
+
+            if (input.matches("\\d")) {
+                int szam = Integer.parseInt(input);
+                if (szam >= 0 && szam <= 7) {
+                    return input;
+                }
+            }
+
+            System.out.println("Hibás választás! 0 és 7 közötti számot adj meg.");
         }
     }
 
