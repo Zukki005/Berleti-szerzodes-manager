@@ -31,14 +31,18 @@ public class Main implements iEv, iHonap, iNap{
 
                 case 2:
                     fajlbaIras(szerzodesek);
+                    System.out.println("Szerződés felvéve!");
                     break;
 
                 case 3:
                     System.out.print("Törlendő azonosító: ");
                     int id = be.nextInt();
-                    torles(szerzodesek, id);
-                    fajlFrissites(szerzodesek);
-                    System.out.println("A "+id+". azonosítójú szerződés adatai törölve!");
+                    if (torles(szerzodesek, id)) {
+                        fajlFrissites(szerzodesek);
+                        System.out.println("A " + id + ". azonosítójú szerződés adatai törölve!");
+                    } else {
+                        System.out.println("Nincs ilyen azonosító!");
+                    }
                     break;
 
                 case 4:
@@ -106,7 +110,9 @@ public class Main implements iEv, iHonap, iNap{
                 szerzodesek.add(sz);
             }
 
-        } catch (Exception ignored) {}
+        } catch (Exception e) {
+            System.out.println("Hiba üzenet: " + e);
+        }
     }
 
     public static void fajlbaIras(ArrayList<Szerzodes> szerzodesek) {
@@ -133,18 +139,28 @@ public class Main implements iEv, iHonap, iNap{
         adatok.add(bekerUjCim(be, szerzodesek, "Apartmann címe: "));
 
         adatok.add(bekerSzam(be, "Bérleti díj: "));
-        adatok.add(bekerSzam(be, "Bérleti idő: "));
+        adatok.add(bekerSzam(be, "Bérleti idő (hónapban): "));
         adatok.add(bekerSzam(be, "Kaukció: "));
         adatok.add(bekerSzam(be, "Négyzetméter: "));
-        adatok.add(bekerSzam(be, "Azonosító: "));
+
+        int id;
+        while (true) {
+            id = Integer.parseInt(bekerSzam(be, "Azonosító: "));
+            if (azonositoFoglalt(id, szerzodesek)) {
+                System.out.println("Ez az azonosító már foglalt! Adj meg egy újat.");
+            } else {
+                break;
+            }
+        }
+        adatok.add(String.valueOf(id));
 
         Berlo b = new Berlo(Integer.parseInt(adatok.get(0)), adatok.get(1), adatok.get(2), Integer.parseInt(adatok.get(3)));
         BerbeAdo ba = new BerbeAdo(Integer.parseInt(adatok.get(4)), adatok.get(5), adatok.get(6), Integer.parseInt(adatok.get(7)));
 
         Szerzodes sz = new Szerzodes(b, ba,
                 adatok.get(8), Integer.parseInt(adatok.get(9)),
-                Integer.parseInt(adatok.get(10)), Integer.parseInt(adatok.get(11)),
-                Integer.parseInt(adatok.get(12)), Integer.parseInt(adatok.get(13)));
+                        Integer.parseInt(adatok.get(10)), Integer.parseInt(adatok.get(11)),
+                        Integer.parseInt(adatok.get(12)), Integer.parseInt(adatok.get(13)));
 
         szerzodesek.add(sz);
 
@@ -155,8 +171,14 @@ public class Main implements iEv, iHonap, iNap{
         }
     }
 
-    public static void torles(ArrayList<Szerzodes> szerzodesek, int id) {
-        szerzodesek.removeIf(sz -> sz.getAzon() == id);
+    public static boolean torles(ArrayList<Szerzodes> szerzodesek, int id) {
+        for (Szerzodes sz : szerzodesek) {
+            if (sz.getAzon() == id) {
+                szerzodesek.remove(sz);
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void fajlFrissites(ArrayList<Szerzodes> szerzodesek) {
@@ -248,6 +270,13 @@ public class Main implements iEv, iHonap, iNap{
 
             return input;
         }
+    }
+
+    public static boolean azonositoFoglalt(int id, ArrayList<Szerzodes> szerzodesek) {
+        for (Szerzodes sz : szerzodesek) {
+            if (sz.getAzon() == id) return true;
+        }
+        return false;
     }
 
     public static LocalDate bekerDatum(Scanner be, String uzenet) {
