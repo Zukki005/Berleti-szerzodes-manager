@@ -52,17 +52,14 @@ public class Main implements iEv, iHonap, iNap{
                     break;
 
                 case 5:
-                    System.out.println("Legolcsóbb:");
                     System.out.println(legolcsobbBerletiDij(szerzodesek));
                     break;
 
                 case 6:
-                    System.out.println("Legnagyobb négyzetméter:");
                     System.out.println(legnagyobbNm(szerzodesek));
                     break;
 
                 case 7:
-                    System.out.println("Legkisebb négyzetméter:");
                     System.out.println(legkisebbNm(szerzodesek));
                     break;
             }
@@ -125,12 +122,12 @@ public class Main implements iEv, iHonap, iNap{
 
         adatok.add(bekerSzam(be, "Bérlő ID: "));
         adatok.add(bekerNev(be, "Bérlő neve: "));
-        adatok.add(String.valueOf(bekerDatum(be, "Bérlő szül. éve: ")));
+        adatok.add(String.valueOf(bekerDatum(be, "Bérlő születési dátuma: ")));
         adatok.add(bekerSzam(be, "Apartmanok száma: "));
 
         adatok.add(bekerSzam(be, "Bérbeadó ID: "));
         adatok.add(bekerNev(be,"Bérbeadó neve: "));
-        adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó szül. éve: ")));
+        adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó születési dátuma: ")));
         adatok.add(bekerSzam(be, "Kiadott lakások száma: "));
 
 
@@ -140,7 +137,7 @@ public class Main implements iEv, iHonap, iNap{
 
         adatok.add(bekerSzam(be, "Bérleti díj: "));
         adatok.add(bekerSzam(be, "Bérleti idő (hónapban): "));
-        adatok.add(bekerSzam(be, "Kaukció: "));
+        adatok.add(bekerSzam(be, "Kaució: "));
         adatok.add(bekerSzam(be, "Négyzetméter: "));
 
         int id;
@@ -192,16 +189,34 @@ public class Main implements iEv, iHonap, iNap{
             if (sz.getAzon() == id) return sz;
         return "Nincs ilyen azonosító!";
     }
-    public static Szerzodes legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek) {
-        return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getBerletiDij));
+    public static Object legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek) {
+        if (szerzodesek.isEmpty()) {
+            return "A lista üres!";
+        } else {
+            System.out.println("Legolcsóbb:");
+            return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getBerletiDij));
+        }
+
     }
 
-    public static Szerzodes legnagyobbNm(ArrayList<Szerzodes> szerzodesek) {
-        return Collections.max(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
+    public static Object legnagyobbNm(ArrayList<Szerzodes> szerzodesek) {
+        if (szerzodesek.isEmpty()) {
+            return "A lista üres!";
+        } else {
+            System.out.println("Legnagyobb négyzetméter:");
+            return Collections.max(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
+        }
+
     }
 
-    public static Szerzodes legkisebbNm(ArrayList<Szerzodes> szerzodesek) {
-        return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
+    public static Object legkisebbNm(ArrayList<Szerzodes> szerzodesek) {
+        if (szerzodesek.isEmpty()) {
+            return "A lista üres!";
+        } else {
+            System.out.println("Legkisebb négyzetméter:");
+            return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
+        }
+
     }
 
     public static String bekerNemUres(Scanner be, String uzenet) {
@@ -221,11 +236,21 @@ public class Main implements iEv, iHonap, iNap{
     public static String bekerSzam(Scanner be, String uzenet) {
         while (true) {
             String input = bekerNemUres(be, uzenet);
-            if (input.matches("\\d+") && Integer.parseInt(input) > 0) {
-                return input;
-            } else {
-                System.out.println("Hibás adat! Csak számot adjon meg.");
+
+            try {
+                int szam = Integer.parseInt(input);
+
+                if (input.matches("\\d+") && Integer.parseInt(input) > 0) {
+                    return input;
+                } else {
+                    System.out.println("Hibás adat! Csak számot adjon meg.");
+                }
+
+            } catch (NumberFormatException nfe) {
+                System.out.println("Hibás adat! Csak az int tartományon belüli számot adjon meg!");
             }
+
+
         }
     }
 
