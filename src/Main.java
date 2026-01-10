@@ -151,27 +151,27 @@ public class Main implements iEv, iHonap, iNap {
         ArrayList<String> adatok = new ArrayList<>();
 
 
-        adatok.add(bekerSzam(be, "Bérlő ID: "));
+        adatok.add(bekerSzam(be, "Bérlő ID: ", 20000, 0));
         adatok.add(bekerNev(be, "Bérlő neve: "));
         adatok.add(String.valueOf(bekerDatum(be, "Bérlő születési dátuma: ")));
-        adatok.add(bekerSzam(be, "Apartmanok száma: "));
+        adatok.add(bekerSzam(be, "Apartmanok száma: ", 20000, 0));
 
 
-        adatok.add(bekerSzam(be, "Bérbeadó ID: "));
+        adatok.add(bekerSzam(be, "Bérbeadó ID: ", 20000, 0));
         adatok.add(bekerNev(be, "Bérbeadó neve: "));
         adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó születési dátuma: ")));
-        adatok.add(bekerSzam(be, "Kiadott lakások száma: "));
+        adatok.add(bekerSzam(be, "Kiadott lakások száma: ", 20000, 0));
 
         adatok.add(bekerUjCim(be, szerzodesek, "Apartman címe: "));
         adatok.add(String.valueOf(bekerSzerzodesDatum(be, "Szerződés kezdete: ")));
-        adatok.add(bekerSzam(be, "Bérleti díj: "));
-        adatok.add(bekerSzam(be, "Bérleti idő (hónapban): "));
-        adatok.add(bekerSzam(be, "Kaució: "));
-        adatok.add(bekerSzam(be, "Négyzetméter: "));
+        adatok.add(bekerSzam(be, "Bérleti díj: ", 450000, 0));
+        adatok.add(bekerSzam(be, "Bérleti idő (hónapban): ", 96, 0));
+        adatok.add(bekerSzam(be, "Kaució: ", 1350000, 0));
+        adatok.add(bekerSzam(be, "Négyzetméter: ", 100, 30));
 
         int id;
         while (true) {
-            id = Integer.parseInt(bekerSzam(be, "Azonosító: "));
+            id = Integer.parseInt(bekerSzam(be, "Azonosító: ", 20000, 0));
             if (azonositoFoglalt(id, szerzodesek)) {
                 System.out.println("Ez az azonosító már foglalt! Adj meg egy újat.");
             } else {
@@ -270,12 +270,22 @@ public class Main implements iEv, iHonap, iNap {
         return input;
     }
 
-    public static String bekerSzam(Scanner be, String uzenet) {
+    public static String bekerSzam(Scanner be, String uzenet, int max, int min) {
         while (true) {
             String input = bekerNemUres(be, uzenet);
             try {
-                if (input.matches("\\d+") && Integer.parseInt(input) > 0) return input;
-                System.out.println("Hibás adat! Csak pozitív számot adjon meg.");
+                int szam = Integer.parseInt(input);
+
+                if (szam <= 0) {
+                    System.out.println("Hibás adat! Csak pozitív számot adjon meg.");
+                } else if (szam > max) {
+                    System.out.println("Hibás adat! A megadott érték maximuma: " + max);
+                } else if (szam < min) {
+                    System.out.println("Hibás adat! A megadott érték minimuma: " + min);
+                } else {
+                    return input;
+                }
+
             } catch (NumberFormatException nfe) {
                 System.out.println("Hibás adat! Csak az int tartományon belüli számot adjon meg!");
             }
@@ -421,19 +431,19 @@ public class Main implements iEv, iHonap, iNap {
                 break;
 
             case 2:
-                sz.setBerletiDij(Integer.parseInt(bekerSzam(be, "Új bérleti díj: ")));
+                sz.setBerletiDij(Integer.parseInt(bekerSzam(be, "Új bérleti díj: ", 450000, 0)));
                 break;
 
             case 3:
-                sz.setBerletiIdo(Integer.parseInt(bekerSzam(be, "Új bérleti idő (hónap): ")));
+                sz.setBerletiIdo(Integer.parseInt(bekerSzam(be, "Új bérleti idő (hónap): ", 96, 0)));
                 break;
 
             case 4:
-                sz.setKaukcioOsszeg(Integer.parseInt(bekerSzam(be, "Új kaució: ")));
+                sz.setKaukcioOsszeg(Integer.parseInt(bekerSzam(be, "Új kaució: ", 1350000, 0)));
                 break;
 
             case 5:
-                sz.setNm(Integer.parseInt(bekerSzam(be, "Új négyzetméter: ")));
+                sz.setNm(Integer.parseInt(bekerSzam(be, "Új négyzetméter: ", 100, 30)));
                 break;
 
             case 0:
