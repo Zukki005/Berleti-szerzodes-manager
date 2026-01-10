@@ -3,7 +3,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.*;
 
-public class Main implements iEv, iHonap, iNap{
+public class Main implements iEv, iHonap, iNap {
 
     public static void main(String[] args) {
         ArrayList<Szerzodes> szerzodesek = new ArrayList<>();
@@ -21,7 +21,9 @@ public class Main implements iEv, iHonap, iNap{
             System.out.println("5 - Legolcsóbb bérleti díj");
             System.out.println("6 - Legnagyobb négyzetméter");
             System.out.println("7 - Legkisebb négyzetméter");
+            System.out.println("8 - 30 napon belül lejáró szerződések");
             System.out.println("0 - Kilépés");
+
             valasztas = Integer.parseInt(menuEllenorzo(be, "Választás: "));
 
             switch (valasztas) {
@@ -37,6 +39,8 @@ public class Main implements iEv, iHonap, iNap{
                 case 3:
                     System.out.print("Törlendő azonosító: ");
                     int id = be.nextInt();
+                    be.nextLine();
+
                     if (torles(szerzodesek, id)) {
                         fajlFrissites(szerzodesek);
                         System.out.println("A " + id + ". azonosítójú szerződés adatai törölve!");
@@ -48,7 +52,24 @@ public class Main implements iEv, iHonap, iNap{
                 case 4:
                     System.out.print("Keresett azonosító: ");
                     int keres = be.nextInt();
-                    System.out.println(keresAzon(keres, szerzodesek));
+                    be.nextLine();
+
+                    Szerzodes talalt = keresAzonObj(keres, szerzodesek);
+
+                    if (talalt == null) {
+                        System.out.println("Nincs ilyen azonosító!");
+                    } else {
+                        System.out.println(talalt);
+
+                        System.out.print("Szeretné módosítani? (i/n): ");
+                        String valasz = be.nextLine();
+
+                        if (valasz.equalsIgnoreCase("i")) {
+                            modositas(be, talalt, szerzodesek);
+                            fajlFrissites(szerzodesek);
+                            System.out.println("Szerződés módosítva!");
+                        }
+                    }
                     break;
 
                 case 5:
@@ -62,49 +83,64 @@ public class Main implements iEv, iHonap, iNap{
                 case 7:
                     System.out.println(legkisebbNm(szerzodesek));
                     break;
+
+                case 8:
+                    lejaroSzerzodesek(szerzodesek);
+                    break;
             }
 
         } while (valasztas != 0);
     }
 
+    // -------------------- BETÖLTÉS --------------------
     public static void toltes(ArrayList<Szerzodes> szerzodesek) {
         try (BufferedReader br = new BufferedReader(new FileReader("szerzodesek.txt"))) {
             String sor;
 
             while ((sor = br.readLine()) != null) {
+                if (sor.trim().isEmpty()) continue;
 
-                StringTokenizer st1 = new StringTokenizer(sor, ",");
-                String berloadat = st1.nextToken();
-                String berbeadoadat = st1.nextToken();
+                try {
+                    StringTokenizer st1 = new StringTokenizer(sor, ",");
+                    String berloadat = st1.nextToken();
+                    String berbeadoadat = st1.nextToken();
 
-                StringTokenizer st2 = new StringTokenizer(berloadat, "/");
-                Berlo berlo = new Berlo(
-                        Integer.parseInt(st2.nextToken()),
-                        st2.nextToken(),
-                        st2.nextToken(),
-                        Integer.parseInt(st2.nextToken())
-                );
+                    StringTokenizer st2 = new StringTokenizer(berloadat, "/");
+                    Berlo berlo = new Berlo(
+                            Integer.parseInt(st2.nextToken()),
+                            st2.nextToken(),
+                            st2.nextToken(),
+                            Integer.parseInt(st2.nextToken())
+                    );
 
-                StringTokenizer st3 = new StringTokenizer(berbeadoadat, "/");
-                BerbeAdo berbeAdo = new BerbeAdo(
-                        Integer.parseInt(st3.nextToken()),
-                        st3.nextToken(),
-                        st3.nextToken(),
-                        Integer.parseInt(st3.nextToken())
-                );
+                    StringTokenizer st3 = new StringTokenizer(berbeadoadat, "/");
+                    BerbeAdo berbeAdo = new BerbeAdo(
+                            Integer.parseInt(st3.nextToken()),
+                            st3.nextToken(),
+                            st3.nextToken(),
+                            Integer.parseInt(st3.nextToken())
+                    );
 
-                Szerzodes sz = new Szerzodes(
-                        berlo,
-                        berbeAdo,
-                        st1.nextToken(),
-                        Integer.parseInt(st1.nextToken()),
-                        Integer.parseInt(st1.nextToken()),
-                        Integer.parseInt(st1.nextToken()),
-                        Integer.parseInt(st1.nextToken()),
-                        Integer.parseInt(st1.nextToken())
-                );
+                    // elvárt sorrend:
+                    // cim, berletiDij, kezdet, berletiIdo, kaucio, nm, azon
+                    Szerzodes sz = new Szerzodes(
+                            berlo,
+                            berbeAdo,
+                            st1.nextToken(),
+                            Integer.parseInt(st1.nextToken()),
+                            LocalDate.parse(st1.nextToken()),
+                            Integer.parseInt(st1.nextToken()),
+                            Integer.parseInt(st1.nextToken()),
+                            Integer.parseInt(st1.nextToken()),
+                            Integer.parseInt(st1.nextToken())
+                    );
 
-                szerzodesek.add(sz);
+                    szerzodesek.add(sz);
+
+                } catch (Exception ex) {
+                    System.out.println("Hibás sor a fájlban, kihagyva: " + sor);
+                    System.out.println("Részletek: " + ex);
+                }
             }
 
         } catch (Exception e) {
@@ -112,33 +148,30 @@ public class Main implements iEv, iHonap, iNap{
         }
     }
 
+    // -------------------- ÚJ SZERZŐDÉS FELVÉTEL --------------------
     public static void fajlbaIras(ArrayList<Szerzodes> szerzodesek) {
         Scanner be = new Scanner(System.in);
         ArrayList<String> adatok = new ArrayList<>();
 
+        // bérlő
+        adatok.add(bekerSzam(be, "Bérlő ID: "));                                   // 0
+        adatok.add(bekerNev(be, "Bérlő neve: "));                                 // 1
+        adatok.add(String.valueOf(bekerDatum(be, "Bérlő születési dátuma: ")));   // 2
+        adatok.add(bekerSzam(be, "Apartmanok száma: "));                          // 3
 
+        // bérbeadó
+        adatok.add(bekerSzam(be, "Bérbeadó ID: "));                               // 4
+        adatok.add(bekerNev(be, "Bérbeadó neve: "));                              // 5
+        adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó születési dátuma: "))); // 6
+        adatok.add(bekerSzam(be, "Kiadott lakások száma: "));                     // 7
 
-
-
-        adatok.add(bekerSzam(be, "Bérlő ID: "));
-        adatok.add(bekerNev(be, "Bérlő neve: "));
-        adatok.add(String.valueOf(bekerDatum(be, "Bérlő születési dátuma: ")));
-        adatok.add(bekerSzam(be, "Apartmanok száma: "));
-
-        adatok.add(bekerSzam(be, "Bérbeadó ID: "));
-        adatok.add(bekerNev(be,"Bérbeadó neve: "));
-        adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó születési dátuma: ")));
-        adatok.add(bekerSzam(be, "Kiadott lakások száma: "));
-
-
-
-
-        adatok.add(bekerUjCim(be, szerzodesek, "Apartmann címe: "));
-
-        adatok.add(bekerSzam(be, "Bérleti díj: "));
-        adatok.add(bekerSzam(be, "Bérleti idő (hónapban): "));
-        adatok.add(bekerSzam(be, "Kaució: "));
-        adatok.add(bekerSzam(be, "Négyzetméter: "));
+        // szerződés
+        adatok.add(bekerUjCim(be, szerzodesek, "Apartman címe: "));               // 8
+        adatok.add(String.valueOf(bekerSzerzodesDatum(be, "Szerződés kezdete: "))); // 9
+        adatok.add(bekerSzam(be, "Bérleti díj: "));                               // 10
+        adatok.add(bekerSzam(be, "Bérleti idő (hónapban): "));                    // 11
+        adatok.add(bekerSzam(be, "Kaució: "));                                    // 12
+        adatok.add(bekerSzam(be, "Négyzetméter: "));                              // 13
 
         int id;
         while (true) {
@@ -149,15 +182,35 @@ public class Main implements iEv, iHonap, iNap{
                 break;
             }
         }
-        adatok.add(String.valueOf(id));
+        adatok.add(String.valueOf(id));                                           // 14
 
-        Berlo b = new Berlo(Integer.parseInt(adatok.get(0)), adatok.get(1), adatok.get(2), Integer.parseInt(adatok.get(3)));
-        BerbeAdo ba = new BerbeAdo(Integer.parseInt(adatok.get(4)), adatok.get(5), adatok.get(6), Integer.parseInt(adatok.get(7)));
+        Berlo b = new Berlo(
+                Integer.parseInt(adatok.get(0)),
+                adatok.get(1),
+                adatok.get(2),
+                Integer.parseInt(adatok.get(3))
+        );
 
-        Szerzodes sz = new Szerzodes(b, ba,
-                adatok.get(8), Integer.parseInt(adatok.get(9)),
-                        Integer.parseInt(adatok.get(10)), Integer.parseInt(adatok.get(11)),
-                        Integer.parseInt(adatok.get(12)), Integer.parseInt(adatok.get(13)));
+        BerbeAdo ba = new BerbeAdo(
+                Integer.parseInt(adatok.get(4)),
+                adatok.get(5),
+                adatok.get(6),
+                Integer.parseInt(adatok.get(7))
+        );
+
+        LocalDate kezdet = LocalDate.parse(adatok.get(9));
+
+        Szerzodes sz = new Szerzodes(
+                b,
+                ba,
+                adatok.get(8),
+                Integer.parseInt(adatok.get(10)),
+                kezdet,
+                Integer.parseInt(adatok.get(11)),
+                Integer.parseInt(adatok.get(12)),
+                Integer.parseInt(adatok.get(13)),
+                Integer.parseInt(adatok.get(14))
+        );
 
         szerzodesek.add(sz);
 
@@ -181,42 +234,34 @@ public class Main implements iEv, iHonap, iNap{
     public static void fajlFrissites(ArrayList<Szerzodes> szerzodesek) {
         try (FileWriter fw = new FileWriter("szerzodesek.txt", false)) {
             for (Szerzodes sz : szerzodesek) fw.write(sz.fajlbaIras());
-        } catch (IOException e) { throw new RuntimeException(e); }
-    }
-
-    public static Object keresAzon(int id, ArrayList<Szerzodes> szerzodesek) {
-        for (Szerzodes sz : szerzodesek)
-            if (sz.getAzon() == id) return sz;
-        return "Nincs ilyen azonosító!";
-    }
-    public static Object legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek) {
-        if (szerzodesek.isEmpty()) {
-            return "A lista üres!";
-        } else {
-            System.out.println("Legolcsóbb:");
-            return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getBerletiDij));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+    }
 
+    public static Szerzodes keresAzonObj(int id, ArrayList<Szerzodes> szerzodesek) {
+        for (Szerzodes sz : szerzodesek) {
+            if (sz.getAzon() == id) return sz;
+        }
+        return null;
+    }
+
+    public static Object legolcsobbBerletiDij(ArrayList<Szerzodes> szerzodesek) {
+        if (szerzodesek.isEmpty()) return "A lista üres!";
+        System.out.println("Legolcsóbb:");
+        return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getBerletiDij));
     }
 
     public static Object legnagyobbNm(ArrayList<Szerzodes> szerzodesek) {
-        if (szerzodesek.isEmpty()) {
-            return "A lista üres!";
-        } else {
-            System.out.println("Legnagyobb négyzetméter:");
-            return Collections.max(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
-        }
-
+        if (szerzodesek.isEmpty()) return "A lista üres!";
+        System.out.println("Legnagyobb négyzetméter:");
+        return Collections.max(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
     }
 
     public static Object legkisebbNm(ArrayList<Szerzodes> szerzodesek) {
-        if (szerzodesek.isEmpty()) {
-            return "A lista üres!";
-        } else {
-            System.out.println("Legkisebb négyzetméter:");
-            return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
-        }
-
+        if (szerzodesek.isEmpty()) return "A lista üres!";
+        System.out.println("Legkisebb négyzetméter:");
+        return Collections.min(szerzodesek, Comparator.comparingInt(Szerzodes::getNm));
     }
 
     public static String bekerNemUres(Scanner be, String uzenet) {
@@ -224,33 +269,20 @@ public class Main implements iEv, iHonap, iNap{
         while (input.isEmpty()) {
             System.out.print(uzenet);
             input = be.nextLine().trim();
-
-            if (input.isEmpty()) {
-                System.out.println("Nem lehet ezt a mezőt üresen hagyni!");
-            }
+            if (input.isEmpty()) System.out.println("Nem lehet ezt a mezőt üresen hagyni!");
         }
-
         return input;
     }
 
     public static String bekerSzam(Scanner be, String uzenet) {
         while (true) {
             String input = bekerNemUres(be, uzenet);
-
             try {
-                int szam = Integer.parseInt(input);
-
-                if (input.matches("\\d+") && Integer.parseInt(input) > 0) {
-                    return input;
-                } else {
-                    System.out.println("Hibás adat! Csak számot adjon meg.");
-                }
-
+                if (input.matches("\\d+") && Integer.parseInt(input) > 0) return input;
+                System.out.println("Hibás adat! Csak pozitív számot adjon meg.");
             } catch (NumberFormatException nfe) {
                 System.out.println("Hibás adat! Csak az int tartományon belüli számot adjon meg!");
             }
-
-
         }
     }
 
@@ -261,12 +293,10 @@ public class Main implements iEv, iHonap, iNap{
 
             if (input.matches("\\d")) {
                 int szam = Integer.parseInt(input);
-                if (szam >= 0 && szam <= 7) {
-                    return input;
-                }
+                if (szam >= 0 && szam <= 8) return input;
             }
 
-            System.out.println("Hibás választás! 0 és 7 közötti számot adj meg.");
+            System.out.println("Hibás választás! 0 és 8 közötti számot adj meg.");
         }
     }
 
@@ -298,9 +328,7 @@ public class Main implements iEv, iHonap, iNap{
     }
 
     public static boolean azonositoFoglalt(int id, ArrayList<Szerzodes> szerzodesek) {
-        for (Szerzodes sz : szerzodesek) {
-            if (sz.getAzon() == id) return true;
-        }
+        for (Szerzodes sz : szerzodesek) if (sz.getAzon() == id) return true;
         return false;
     }
 
@@ -323,19 +351,16 @@ public class Main implements iEv, iHonap, iNap{
                     System.out.println("Hibás év! Érvényes év: " + iEv.MIN + "-" + iEv.MAX);
                     continue;
                 }
-
                 if (honap < iHonap.MIN || honap > iHonap.MAX) {
                     System.out.println("Hibás hónap! Érvényes hónap: 1-12");
                     continue;
                 }
-
                 if (nap < iNap.MIN || nap > iNap.MAX) {
                     System.out.println("Hibás nap! Érvényes nap: 1-31");
                     continue;
                 }
 
-                LocalDate datum = LocalDate.parse(input);
-                return datum;
+                return LocalDate.parse(input);
 
             } catch (NumberFormatException e) {
                 System.out.println("Hiba! Csak számokat adjon meg.");
@@ -343,24 +368,102 @@ public class Main implements iEv, iHonap, iNap{
                 System.out.println("Érvénytelen dátum!");
             }
         }
-
     }
 
-    public static String bekerUjCim(Scanner be,ArrayList<Szerzodes> szerzodesek, String uzenet) {
+    public static LocalDate bekerSzerzodesDatum(Scanner be, String uzenet) {
+        while (true) {
+            System.out.print(uzenet);
+            String input = be.nextLine();
+
+            if (input.length() != 10 || input.charAt(4) != '-' || input.charAt(7) != '-') {
+                System.out.println("Hibás formátum! Helyes formátum: yyyy-MM-dd");
+                continue;
+            }
+
+            try {
+                return LocalDate.parse(input);
+            } catch (DateTimeParseException e) {
+                System.out.println("Érvénytelen dátum!");
+            }
+        }
+    }
+
+    public static String bekerUjCim(Scanner be, ArrayList<Szerzodes> szerzodesek, String uzenet) {
         while (true) {
             String ujCim = bekerNemUres(be, uzenet);
             boolean foglalt = false;
+
             for (Szerzodes sz : szerzodesek) {
                 if (sz.getCim().equalsIgnoreCase(ujCim)) {
                     foglalt = true;
                     break;
                 }
             }
+
             if (foglalt) {
                 System.out.println("Ezen a címen már lefoglalták az apartmant! Adj meg egy új címet!");
             } else {
                 return ujCim;
             }
+        }
+    }
+
+    public static void modositas(Scanner be, Szerzodes sz, ArrayList<Szerzodes> szerzodesek) {
+        System.out.println("Mit szeretne módosítani?");
+        System.out.println("1 - Cím");
+        System.out.println("2 - Bérleti díj");
+        System.out.println("3 - Bérleti idő");
+        System.out.println("4 - Kaució");
+        System.out.println("5 - Négyzetméter");
+        System.out.println("0 - Mégse");
+
+        int val = Integer.parseInt(menuEllenorzo(be, "Választás: "));
+
+        switch (val) {
+            case 1:
+                sz.setCim(bekerUjCim(be, szerzodesek, "Új cím: "));
+                break;
+
+            case 2:
+                sz.setBerletiDij(Integer.parseInt(bekerSzam(be, "Új bérleti díj: ")));
+                break;
+
+            case 3:
+                sz.setBerletiIdo(Integer.parseInt(bekerSzam(be, "Új bérleti idő (hónap): ")));
+                break;
+
+            case 4:
+                sz.setKaukcioOsszeg(Integer.parseInt(bekerSzam(be, "Új kaució: ")));
+                break;
+
+            case 5:
+                sz.setNm(Integer.parseInt(bekerSzam(be, "Új négyzetméter: ")));
+                break;
+
+            case 0:
+                System.out.println("Módosítás megszakítva.");
+                break;
+        }
+    }
+
+    public static void lejaroSzerzodesek(ArrayList<Szerzodes> szerzodesek) {
+        LocalDate ma = LocalDate.now();
+        LocalDate harmincNapMulva = ma.plusDays(30);
+
+        boolean volt = false;
+
+        for (Szerzodes sz : szerzodesek) {
+            LocalDate lejarat = sz.getKezdet().plusMonths(sz.getBerletiIdo());
+
+            if (!lejarat.isBefore(ma) && !lejarat.isAfter(harmincNapMulva)) {
+                System.out.println("⚠ 30 napon belül lejár:");
+                System.out.println(sz);
+                volt = true;
+            }
+        }
+
+        if (!volt) {
+            System.out.println("Nincs 30 napon belül lejáró szerződés.");
         }
     }
 }

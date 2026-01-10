@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Szerzodes {
 
     private Berlo berloAdatai;
@@ -6,16 +8,18 @@ public class Szerzodes {
     private int azon;
     private int berletiDij;
     private int kaukcioOsszeg;
+    private LocalDate kezdet;
     private int berletiIdo;
     private int nm;
 
     public Szerzodes(Berlo berloAdatai, BerbeAdo berbeAdoAdatai, String cim,
-                     int berletiDij, int berletiIdo, int kaukcioOsszeg, int nm, int azon) {
+                     int berletiDij, LocalDate kezdet, int berletiIdo, int kaukcioOsszeg, int nm, int azon) {
 
         setBerloAdatai(berloAdatai);
         setBerbeAdoAdatai(berbeAdoAdatai);
         setCim(cim);
         setBerletiDij(berletiDij);
+        setKezdet(kezdet);
         setBerletiIdo(berletiIdo);
         setKaukcioOsszeg(kaukcioOsszeg);
         setNm(nm);
@@ -37,6 +41,14 @@ public class Szerzodes {
     public int getKaukcioOsszeg() { return kaukcioOsszeg; }
     public void setKaukcioOsszeg(int kaukcioOsszeg) { this.kaukcioOsszeg = kaukcioOsszeg; }
 
+    public LocalDate getKezdet() {
+        return kezdet;
+    }
+
+    public void setKezdet(LocalDate kezdet) {
+        this.kezdet = kezdet;
+    }
+
     public int getBerletiIdo() { return berletiIdo; }
     public void setBerletiIdo(int berletiIdo) { this.berletiIdo = berletiIdo; }
 
@@ -55,6 +67,7 @@ public class Szerzodes {
                 "\n\n" + berbeAdoAdatai +
                 "\n\n- Cím: " + cim +
                 "\n- Bérleti díj: " + berletiDij +
+                "\n- Kezdete: " + kezdet +
                 "\n- Bérleti idő: " + berletiIdo +
                 "\n- Négyzetméter: " + nm +
                 "\n- Kaukció: " + kaukcioOsszeg +
@@ -67,11 +80,10 @@ public class Szerzodes {
                 berbeAdoAdatai.fajlbaIras() + "," +
                 cim + "," +
                 berletiDij + "," +
+                kezdet + "," +
                 berletiIdo + "," +
-                nm + "," +
                 kaukcioOsszeg + "," +
+                nm + "," +
                 azon + "\n";
     }
 }
-
-
