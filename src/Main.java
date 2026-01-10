@@ -92,7 +92,6 @@ public class Main implements iEv, iHonap, iNap {
         } while (valasztas != 0);
     }
 
-    // -------------------- BETÖLTÉS --------------------
     public static void toltes(ArrayList<Szerzodes> szerzodesek) {
         try (BufferedReader br = new BufferedReader(new FileReader("szerzodesek.txt"))) {
             String sor;
@@ -121,8 +120,6 @@ public class Main implements iEv, iHonap, iNap {
                             Integer.parseInt(st3.nextToken())
                     );
 
-                    // elvárt sorrend:
-                    // cim, berletiDij, kezdet, berletiIdo, kaucio, nm, azon
                     Szerzodes sz = new Szerzodes(
                             berlo,
                             berbeAdo,
@@ -148,30 +145,29 @@ public class Main implements iEv, iHonap, iNap {
         }
     }
 
-    // -------------------- ÚJ SZERZŐDÉS FELVÉTEL --------------------
+
     public static void fajlbaIras(ArrayList<Szerzodes> szerzodesek) {
         Scanner be = new Scanner(System.in);
         ArrayList<String> adatok = new ArrayList<>();
 
-        // bérlő
-        adatok.add(bekerSzam(be, "Bérlő ID: "));                                   // 0
-        adatok.add(bekerNev(be, "Bérlő neve: "));                                 // 1
-        adatok.add(String.valueOf(bekerDatum(be, "Bérlő születési dátuma: ")));   // 2
-        adatok.add(bekerSzam(be, "Apartmanok száma: "));                          // 3
 
-        // bérbeadó
-        adatok.add(bekerSzam(be, "Bérbeadó ID: "));                               // 4
-        adatok.add(bekerNev(be, "Bérbeadó neve: "));                              // 5
-        adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó születési dátuma: "))); // 6
-        adatok.add(bekerSzam(be, "Kiadott lakások száma: "));                     // 7
+        adatok.add(bekerSzam(be, "Bérlő ID: "));
+        adatok.add(bekerNev(be, "Bérlő neve: "));
+        adatok.add(String.valueOf(bekerDatum(be, "Bérlő születési dátuma: ")));
+        adatok.add(bekerSzam(be, "Apartmanok száma: "));
 
-        // szerződés
-        adatok.add(bekerUjCim(be, szerzodesek, "Apartman címe: "));               // 8
-        adatok.add(String.valueOf(bekerSzerzodesDatum(be, "Szerződés kezdete: "))); // 9
-        adatok.add(bekerSzam(be, "Bérleti díj: "));                               // 10
-        adatok.add(bekerSzam(be, "Bérleti idő (hónapban): "));                    // 11
-        adatok.add(bekerSzam(be, "Kaució: "));                                    // 12
-        adatok.add(bekerSzam(be, "Négyzetméter: "));                              // 13
+
+        adatok.add(bekerSzam(be, "Bérbeadó ID: "));
+        adatok.add(bekerNev(be, "Bérbeadó neve: "));
+        adatok.add(String.valueOf(bekerDatum(be, "Bérbeadó születési dátuma: ")));
+        adatok.add(bekerSzam(be, "Kiadott lakások száma: "));
+
+        adatok.add(bekerUjCim(be, szerzodesek, "Apartman címe: "));
+        adatok.add(String.valueOf(bekerSzerzodesDatum(be, "Szerződés kezdete: ")));
+        adatok.add(bekerSzam(be, "Bérleti díj: "));
+        adatok.add(bekerSzam(be, "Bérleti idő (hónapban): "));
+        adatok.add(bekerSzam(be, "Kaució: "));
+        adatok.add(bekerSzam(be, "Négyzetméter: "));
 
         int id;
         while (true) {
@@ -182,7 +178,7 @@ public class Main implements iEv, iHonap, iNap {
                 break;
             }
         }
-        adatok.add(String.valueOf(id));                                           // 14
+        adatok.add(String.valueOf(id));
 
         Berlo b = new Berlo(
                 Integer.parseInt(adatok.get(0)),
